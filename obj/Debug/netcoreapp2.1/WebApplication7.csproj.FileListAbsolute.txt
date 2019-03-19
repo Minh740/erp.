@@ -1,0 +1,131 @@
+C:\Users\Welcome\source\repos\WebApplication7\WebApplication7\bin\Debug\netcoreapp2.1\WebApplication7.deps.json
+C:\Users\Welcome\source\repos\WebApplication7\WebApplication7\bin\Debug\netcoreapp2.1\WebApplication7.runtimeconfig.json
+C:\Users\Welcome\source\repos\WebApplication7\WebApplication7\bin\Debug\netcoreapp2.1\WebApplication7.runtimeconfig.dev.json
+C:\Users\Welcome\source\repos\WebApplication7\WebApplication7\bin\Debug\netcoreapp2.1\WebApplication7.dll
+C:\Users\Welcome\source\repos\WebApplication7\WebApplication7\bin\Debug\netcoreapp2.1\WebApplication7.pdb
+C:\Users\Welcome\source\repos\WebApplication7\WebApplication7\bin\Debug\netcoreapp2.1\WebApplication7.Views.dll
+C:\Users\Welcome\source\repos\WebApplication7\WebApplication7\bin\Debug\netcoreapp2.1\WebApplication7.Views.pdb
+C:\Users\Welcome\source\repos\WebApplication7\WebApplication7\obj\Debug\netcoreapp2.1\WebApplication7.csprojAssemblyReference.cache
+C:\Users\Welcome\source\repos\WebApplication7\WebApplication7\obj\Debug\netcoreapp2.1\WebApplication7.csproj.CoreCompileInputs.cache
+C:\Users\Welcome\source\repos\WebApplication7\WebApplication7\obj\Debug\netcoreapp2.1\WebApplication7.RazorAssemblyInfo.cache
+C:\Users\Welcome\source\repos\WebApplication7\WebApplication7\obj\Debug\netcoreapp2.1\WebApplication7.RazorAssemblyInfo.cs
+C:\Users\Welcome\source\repos\WebApplication7\WebApplication7\obj\Debug\netcoreapp2.1\WebApplication7.AssemblyInfoInputs.cache
+C:\Users\Welcome\source\repos\WebApplication7\WebApplication7\obj\Debug\netcoreapp2.1\WebApplication7.AssemblyInfo.cs
+C:\Users\Welcome\source\repos\WebApplication7\WebApplication7\obj\Debug\netcoreapp2.1\WebApplication7.TagHelpers.input.cache
+C:\Users\Welcome\source\repos\WebApplication7\WebApplication7\obj\Debug\netcoreapp2.1\WebApplication7.TagHelpers.output.cache
+C:\Users\Welcome\source\repos\WebApplication7\WebApplication7\obj\Debug\netcoreapp2.1\WebApplication7.RazorCoreGenerate.cache
+C:\Users\Welcome\source\repos\WebApplication7\WebApplication7\obj\Debug\netcoreapp2.1\Razor\Views\Home\About.g.cshtml.cs
+C:\Users\Welcome\source\repos\WebApplication7\WebApplication7\obj\Debug\netcoreapp2.1\Razor\Views\Home\Contact.g.cshtml.cs
+C:\Users\Welcome\source\repos\WebApplication7\WebApplication7\obj\Debug\netcoreapp2.1\Razor\Views\Home\Index.g.cshtml.cs
+C:\Users\Welcome\source\repos\WebApplication7\WebApplication7\obj\Debug\netcoreapp2.1\Razor\Views\Home\Privacy.g.cshtml.cs
+C:\Users\Welcome\source\repos\WebApplication7\WebApplication7\obj\Debug\netcoreapp2.1\Razor\Views\Shared\Error.g.cshtml.cs
+C:\Users\Welcome\source\repos\WebApplication7\WebApplication7\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_CookieConsentPartial.g.cshtml.cs
+C:\Users\Welcome\source\repos\WebApplication7\WebApplication7\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_Layout.g.cshtml.cs
+C:\Users\Welcome\source\repos\WebApplication7\WebApplication7\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_ValidationScriptsPartial.g.cshtml.cs
+C:\Users\Welcome\source\repos\WebApplication7\WebApplication7\obj\Debug\netcoreapp2.1\Razor\Views\_ViewImports.g.cshtml.cs
+C:\Users\Welcome\source\repos\WebApplication7\WebApplication7\obj\Debug\netcoreapp2.1\Razor\Views\_ViewStart.g.cshtml.cs
+C:\Users\Welcome\source\repos\WebApplication7\WebApplication7\obj\Debug\netcoreapp2.1\WebApplication7.RazorTargetAssemblyInfo.cache
+C:\Users\Welcome\source\repos\WebApplication7\WebApplication7\obj\Debug\netcoreapp2.1\WebApplication7.RazorTargetAssemblyInfo.cs
+C:\Users\Welcome\source\repos\WebApplication7\WebApplication7\obj\Debug\netcoreapp2.1\WebApplication7.Views.pdb
+C:\Users\Welcome\source\repos\WebApplication7\WebApplication7\obj\Debug\netcoreapp2.1\WebApplication7.dll
+C:\Users\Welcome\source\repos\WebApplication7\WebApplication7\obj\Debug\netcoreapp2.1\WebApplication7.pdb
+C:\Users\Welcome\source\repos\WebApplication7\WebApplication7\obj\Debug\netcoreapp2.1\WebApplication7.csproj.CopyComplete
+E:\Thực tập\Dự Án\quanlynhansu-master\WebApplication7\bin\Debug\netcoreapp2.1\WebApplication7.deps.json
+E:\Thực tập\Dự Án\quanlynhansu-master\WebApplication7\bin\Debug\netcoreapp2.1\WebApplication7.runtimeconfig.json
+E:\Thực tập\Dự Án\quanlynhansu-master\WebApplication7\bin\Debug\netcoreapp2.1\WebApplication7.runtimeconfig.dev.json
+E:\Thực tập\Dự Án\quanlynhansu-master\WebApplication7\bin\Debug\netcoreapp2.1\WebApplication7.dll
+E:\Thực tập\Dự Án\quanlynhansu-master\WebApplication7\bin\Debug\netcoreapp2.1\WebApplication7.pdb
+E:\Thực tập\Dự Án\quanlynhansu-master\WebApplication7\bin\Debug\netcoreapp2.1\WebApplication7.Views.dll
+E:\Thực tập\Dự Án\quanlynhansu-master\WebApplication7\bin\Debug\netcoreapp2.1\WebApplication7.Views.pdb
+E:\Thực tập\Dự Án\quanlynhansu-master\WebApplication7\obj\Debug\netcoreapp2.1\WebApplication7.csproj.CoreCompileInputs.cache
+E:\Thực tập\Dự Án\quanlynhansu-master\WebApplication7\obj\Debug\netcoreapp2.1\WebApplication7.RazorAssemblyInfo.cache
+E:\Thực tập\Dự Án\quanlynhansu-master\WebApplication7\obj\Debug\netcoreapp2.1\WebApplication7.RazorAssemblyInfo.cs
+E:\Thực tập\Dự Án\quanlynhansu-master\WebApplication7\obj\Debug\netcoreapp2.1\WebApplication7.AssemblyInfoInputs.cache
+E:\Thực tập\Dự Án\quanlynhansu-master\WebApplication7\obj\Debug\netcoreapp2.1\WebApplication7.AssemblyInfo.cs
+E:\Thực tập\Dự Án\quanlynhansu-master\WebApplication7\obj\Debug\netcoreapp2.1\WebApplication7.TagHelpers.input.cache
+E:\Thực tập\Dự Án\quanlynhansu-master\WebApplication7\obj\Debug\netcoreapp2.1\WebApplication7.TagHelpers.output.cache
+E:\Thực tập\Dự Án\quanlynhansu-master\WebApplication7\obj\Debug\netcoreapp2.1\WebApplication7.RazorCoreGenerate.cache
+E:\Thực tập\Dự Án\quanlynhansu-master\WebApplication7\obj\Debug\netcoreapp2.1\Razor\Views\Home\About.g.cshtml.cs
+E:\Thực tập\Dự Án\quanlynhansu-master\WebApplication7\obj\Debug\netcoreapp2.1\Razor\Views\Home\Contact.g.cshtml.cs
+E:\Thực tập\Dự Án\quanlynhansu-master\WebApplication7\obj\Debug\netcoreapp2.1\Razor\Views\Home\Index.g.cshtml.cs
+E:\Thực tập\Dự Án\quanlynhansu-master\WebApplication7\obj\Debug\netcoreapp2.1\Razor\Views\Home\NhanVien.g.cshtml.cs
+E:\Thực tập\Dự Án\quanlynhansu-master\WebApplication7\obj\Debug\netcoreapp2.1\Razor\Views\Home\Privacy.g.cshtml.cs
+E:\Thực tập\Dự Án\quanlynhansu-master\WebApplication7\obj\Debug\netcoreapp2.1\Razor\Views\Shared\Error.g.cshtml.cs
+E:\Thực tập\Dự Án\quanlynhansu-master\WebApplication7\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_CookieConsentPartial.g.cshtml.cs
+E:\Thực tập\Dự Án\quanlynhansu-master\WebApplication7\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_Layout.g.cshtml.cs
+E:\Thực tập\Dự Án\quanlynhansu-master\WebApplication7\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_ValidationScriptsPartial.g.cshtml.cs
+E:\Thực tập\Dự Án\quanlynhansu-master\WebApplication7\obj\Debug\netcoreapp2.1\Razor\Views\_ViewImports.g.cshtml.cs
+E:\Thực tập\Dự Án\quanlynhansu-master\WebApplication7\obj\Debug\netcoreapp2.1\Razor\Views\_ViewStart.g.cshtml.cs
+E:\Thực tập\Dự Án\quanlynhansu-master\WebApplication7\obj\Debug\netcoreapp2.1\WebApplication7.RazorTargetAssemblyInfo.cache
+E:\Thực tập\Dự Án\quanlynhansu-master\WebApplication7\obj\Debug\netcoreapp2.1\WebApplication7.RazorTargetAssemblyInfo.cs
+E:\Thực tập\Dự Án\quanlynhansu-master\WebApplication7\obj\Debug\netcoreapp2.1\WebApplication7.Views.pdb
+E:\Thực tập\Dự Án\quanlynhansu-master\WebApplication7\obj\Debug\netcoreapp2.1\WebApplication7.dll
+E:\Thực tập\Dự Án\quanlynhansu-master\WebApplication7\obj\Debug\netcoreapp2.1\WebApplication7.pdb
+E:\Thực tập\Dự Án\quanlynhansu-master\WebApplication7\obj\Debug\netcoreapp2.1\WebApplication7.csproj.CopyComplete
+E:\Thực tập\Dự Án\quanlynhansu-master\WebApplication7\obj\Debug\netcoreapp2.1\WebApplication7.csprojAssemblyReference.cache
+E:\Thực tập\Du_An\quanlynhansu-master\WebApplication7\bin\Debug\netcoreapp2.1\WebApplication7.deps.json
+E:\Thực tập\Du_An\quanlynhansu-master\WebApplication7\bin\Debug\netcoreapp2.1\WebApplication7.runtimeconfig.json
+E:\Thực tập\Du_An\quanlynhansu-master\WebApplication7\bin\Debug\netcoreapp2.1\WebApplication7.runtimeconfig.dev.json
+E:\Thực tập\Du_An\quanlynhansu-master\WebApplication7\bin\Debug\netcoreapp2.1\WebApplication7.dll
+E:\Thực tập\Du_An\quanlynhansu-master\WebApplication7\bin\Debug\netcoreapp2.1\WebApplication7.pdb
+E:\Thực tập\Du_An\quanlynhansu-master\WebApplication7\bin\Debug\netcoreapp2.1\WebApplication7.Views.dll
+E:\Thực tập\Du_An\quanlynhansu-master\WebApplication7\bin\Debug\netcoreapp2.1\WebApplication7.Views.pdb
+E:\Thực tập\Du_An\quanlynhansu-master\WebApplication7\obj\Debug\netcoreapp2.1\WebApplication7.csprojAssemblyReference.cache
+E:\Thực tập\Du_An\quanlynhansu-master\WebApplication7\obj\Debug\netcoreapp2.1\WebApplication7.csproj.CoreCompileInputs.cache
+E:\Thực tập\Du_An\quanlynhansu-master\WebApplication7\obj\Debug\netcoreapp2.1\WebApplication7.RazorAssemblyInfo.cache
+E:\Thực tập\Du_An\quanlynhansu-master\WebApplication7\obj\Debug\netcoreapp2.1\WebApplication7.RazorAssemblyInfo.cs
+E:\Thực tập\Du_An\quanlynhansu-master\WebApplication7\obj\Debug\netcoreapp2.1\WebApplication7.AssemblyInfoInputs.cache
+E:\Thực tập\Du_An\quanlynhansu-master\WebApplication7\obj\Debug\netcoreapp2.1\WebApplication7.AssemblyInfo.cs
+E:\Thực tập\Du_An\quanlynhansu-master\WebApplication7\obj\Debug\netcoreapp2.1\WebApplication7.TagHelpers.input.cache
+E:\Thực tập\Du_An\quanlynhansu-master\WebApplication7\obj\Debug\netcoreapp2.1\WebApplication7.TagHelpers.output.cache
+E:\Thực tập\Du_An\quanlynhansu-master\WebApplication7\obj\Debug\netcoreapp2.1\WebApplication7.RazorCoreGenerate.cache
+E:\Thực tập\Du_An\quanlynhansu-master\WebApplication7\obj\Debug\netcoreapp2.1\Razor\Views\Home\About.g.cshtml.cs
+E:\Thực tập\Du_An\quanlynhansu-master\WebApplication7\obj\Debug\netcoreapp2.1\Razor\Views\Home\Contact.g.cshtml.cs
+E:\Thực tập\Du_An\quanlynhansu-master\WebApplication7\obj\Debug\netcoreapp2.1\Razor\Views\Home\Index.g.cshtml.cs
+E:\Thực tập\Du_An\quanlynhansu-master\WebApplication7\obj\Debug\netcoreapp2.1\Razor\Views\Home\NhanVien.g.cshtml.cs
+E:\Thực tập\Du_An\quanlynhansu-master\WebApplication7\obj\Debug\netcoreapp2.1\Razor\Views\Home\Privacy.g.cshtml.cs
+E:\Thực tập\Du_An\quanlynhansu-master\WebApplication7\obj\Debug\netcoreapp2.1\Razor\Views\Shared\Error.g.cshtml.cs
+E:\Thực tập\Du_An\quanlynhansu-master\WebApplication7\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_CookieConsentPartial.g.cshtml.cs
+E:\Thực tập\Du_An\quanlynhansu-master\WebApplication7\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_Layout.g.cshtml.cs
+E:\Thực tập\Du_An\quanlynhansu-master\WebApplication7\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_ValidationScriptsPartial.g.cshtml.cs
+E:\Thực tập\Du_An\quanlynhansu-master\WebApplication7\obj\Debug\netcoreapp2.1\Razor\Views\_ViewImports.g.cshtml.cs
+E:\Thực tập\Du_An\quanlynhansu-master\WebApplication7\obj\Debug\netcoreapp2.1\Razor\Views\_ViewStart.g.cshtml.cs
+E:\Thực tập\Du_An\quanlynhansu-master\WebApplication7\obj\Debug\netcoreapp2.1\WebApplication7.RazorTargetAssemblyInfo.cache
+E:\Thực tập\Du_An\quanlynhansu-master\WebApplication7\obj\Debug\netcoreapp2.1\WebApplication7.RazorTargetAssemblyInfo.cs
+E:\Thực tập\Du_An\quanlynhansu-master\WebApplication7\obj\Debug\netcoreapp2.1\WebApplication7.Views.pdb
+E:\Thực tập\Du_An\quanlynhansu-master\WebApplication7\obj\Debug\netcoreapp2.1\WebApplication7.dll
+E:\Thực tập\Du_An\quanlynhansu-master\WebApplication7\obj\Debug\netcoreapp2.1\WebApplication7.pdb
+E:\Thực tập\Du_An\quanlynhansu-master\WebApplication7\obj\Debug\netcoreapp2.1\WebApplication7.csproj.CopyComplete
+C:\Users\DellPC\Desktop\quanlynhansu-master\quanlynhansu-master\WebApplication7\bin\Debug\netcoreapp2.1\WebApplication7.deps.json
+C:\Users\DellPC\Desktop\quanlynhansu-master\quanlynhansu-master\WebApplication7\bin\Debug\netcoreapp2.1\WebApplication7.runtimeconfig.json
+C:\Users\DellPC\Desktop\quanlynhansu-master\quanlynhansu-master\WebApplication7\bin\Debug\netcoreapp2.1\WebApplication7.runtimeconfig.dev.json
+C:\Users\DellPC\Desktop\quanlynhansu-master\quanlynhansu-master\WebApplication7\bin\Debug\netcoreapp2.1\WebApplication7.dll
+C:\Users\DellPC\Desktop\quanlynhansu-master\quanlynhansu-master\WebApplication7\bin\Debug\netcoreapp2.1\WebApplication7.pdb
+C:\Users\DellPC\Desktop\quanlynhansu-master\quanlynhansu-master\WebApplication7\bin\Debug\netcoreapp2.1\WebApplication7.Views.dll
+C:\Users\DellPC\Desktop\quanlynhansu-master\quanlynhansu-master\WebApplication7\bin\Debug\netcoreapp2.1\WebApplication7.Views.pdb
+C:\Users\DellPC\Desktop\quanlynhansu-master\quanlynhansu-master\WebApplication7\obj\Debug\netcoreapp2.1\WebApplication7.csprojAssemblyReference.cache
+C:\Users\DellPC\Desktop\quanlynhansu-master\quanlynhansu-master\WebApplication7\obj\Debug\netcoreapp2.1\WebApplication7.csproj.CoreCompileInputs.cache
+C:\Users\DellPC\Desktop\quanlynhansu-master\quanlynhansu-master\WebApplication7\obj\Debug\netcoreapp2.1\WebApplication7.RazorAssemblyInfo.cache
+C:\Users\DellPC\Desktop\quanlynhansu-master\quanlynhansu-master\WebApplication7\obj\Debug\netcoreapp2.1\WebApplication7.RazorAssemblyInfo.cs
+C:\Users\DellPC\Desktop\quanlynhansu-master\quanlynhansu-master\WebApplication7\obj\Debug\netcoreapp2.1\WebApplication7.AssemblyInfoInputs.cache
+C:\Users\DellPC\Desktop\quanlynhansu-master\quanlynhansu-master\WebApplication7\obj\Debug\netcoreapp2.1\WebApplication7.AssemblyInfo.cs
+C:\Users\DellPC\Desktop\quanlynhansu-master\quanlynhansu-master\WebApplication7\obj\Debug\netcoreapp2.1\WebApplication7.TagHelpers.input.cache
+C:\Users\DellPC\Desktop\quanlynhansu-master\quanlynhansu-master\WebApplication7\obj\Debug\netcoreapp2.1\WebApplication7.TagHelpers.output.cache
+C:\Users\DellPC\Desktop\quanlynhansu-master\quanlynhansu-master\WebApplication7\obj\Debug\netcoreapp2.1\WebApplication7.RazorCoreGenerate.cache
+C:\Users\DellPC\Desktop\quanlynhansu-master\quanlynhansu-master\WebApplication7\obj\Debug\netcoreapp2.1\Razor\Views\Home\About.g.cshtml.cs
+C:\Users\DellPC\Desktop\quanlynhansu-master\quanlynhansu-master\WebApplication7\obj\Debug\netcoreapp2.1\Razor\Views\Home\Contact.g.cshtml.cs
+C:\Users\DellPC\Desktop\quanlynhansu-master\quanlynhansu-master\WebApplication7\obj\Debug\netcoreapp2.1\Razor\Views\Home\Index.g.cshtml.cs
+C:\Users\DellPC\Desktop\quanlynhansu-master\quanlynhansu-master\WebApplication7\obj\Debug\netcoreapp2.1\Razor\Views\Home\NhanVien.g.cshtml.cs
+C:\Users\DellPC\Desktop\quanlynhansu-master\quanlynhansu-master\WebApplication7\obj\Debug\netcoreapp2.1\Razor\Views\Home\Privacy.g.cshtml.cs
+C:\Users\DellPC\Desktop\quanlynhansu-master\quanlynhansu-master\WebApplication7\obj\Debug\netcoreapp2.1\Razor\Views\Shared\Error.g.cshtml.cs
+C:\Users\DellPC\Desktop\quanlynhansu-master\quanlynhansu-master\WebApplication7\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_CookieConsentPartial.g.cshtml.cs
+C:\Users\DellPC\Desktop\quanlynhansu-master\quanlynhansu-master\WebApplication7\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_Layout.g.cshtml.cs
+C:\Users\DellPC\Desktop\quanlynhansu-master\quanlynhansu-master\WebApplication7\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_ValidationScriptsPartial.g.cshtml.cs
+C:\Users\DellPC\Desktop\quanlynhansu-master\quanlynhansu-master\WebApplication7\obj\Debug\netcoreapp2.1\Razor\Views\_ViewImports.g.cshtml.cs
+C:\Users\DellPC\Desktop\quanlynhansu-master\quanlynhansu-master\WebApplication7\obj\Debug\netcoreapp2.1\Razor\Views\_ViewStart.g.cshtml.cs
+C:\Users\DellPC\Desktop\quanlynhansu-master\quanlynhansu-master\WebApplication7\obj\Debug\netcoreapp2.1\WebApplication7.RazorTargetAssemblyInfo.cache
+C:\Users\DellPC\Desktop\quanlynhansu-master\quanlynhansu-master\WebApplication7\obj\Debug\netcoreapp2.1\WebApplication7.RazorTargetAssemblyInfo.cs
+C:\Users\DellPC\Desktop\quanlynhansu-master\quanlynhansu-master\WebApplication7\obj\Debug\netcoreapp2.1\WebApplication7.Views.pdb
+C:\Users\DellPC\Desktop\quanlynhansu-master\quanlynhansu-master\WebApplication7\obj\Debug\netcoreapp2.1\WebApplication7.dll
+C:\Users\DellPC\Desktop\quanlynhansu-master\quanlynhansu-master\WebApplication7\obj\Debug\netcoreapp2.1\WebApplication7.pdb
+C:\Users\DellPC\Desktop\quanlynhansu-master\quanlynhansu-master\WebApplication7\obj\Debug\netcoreapp2.1\WebApplication7.csproj.CopyComplete

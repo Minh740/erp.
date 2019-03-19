@@ -1,0 +1,264 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Course</title>
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <!-- Bootstrap 3.3.7 -->
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link href="css/AllCoursesCss.css" rel="stylesheet" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Ionicons -->
+    <link rel="stylesheet" href="bower_components/Ionicons/css/ionicons.min.css">
+    <!-- Theme style -->
+    <link rel="stylesheet" href="dist/css/AdminLTE.min.css">
+    <!-- AdminLTE Skins. Choose a skin from the css/skins
+         folder instead of downloading all of them to reduce the load. -->
+    <link rel="stylesheet" href="dist/css/skins/_all-skins.min.css">
+    <!-- Morris chart -->
+    <link rel="stylesheet" href="bower_components/morris.js/morris.css">
+    <!-- jvectormap -->
+    <link rel="stylesheet" href="bower_components/jvectormap/jquery-jvectormap.css">
+    <!-- Date Picker -->
+    <link rel="stylesheet" href="bower_components/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css">
+    <!-- Daterange picker -->
+    <link rel="stylesheet" href="bower_components/bootstrap-daterangepicker/daterangepicker.css">
+    <!-- bootstrap wysihtml5 - text editor -->
+    <link rel="stylesheet" href="plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!-- Google Font -->
+    <link href="Style/Trang.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+<body class="hold-transition skin-blue sidebar-mini">
+    <header class="main-header">
+        <div class="topnav">
+            <nav class="navbar navbar-inverse">
+                <div class="container-fluid">
+                    <ul class="nav navbar-nav">
+                        <li class="dropdown">
+                            <a class="logo-lg" data-toggle="dropdown" href="#">Basecrop </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="Main.html"><i class="fa fa-home"></i> Dashboard</a></li>
+                                <li><a href="CompanyDocuments.html"><i class="fa fa-folder"></i> Company documents</a></li>
+                                <li><a href="InstallationAndConfiguration.html"><i class="fa fa-cog"></i> Installation & Configuration</a></li>
+                                <li><a href="ContactAndHelp.html"><i class="fa fa-question-circle"></i> Contact & Help</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Timekeeping </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="TimeKeeping.html"><i class="fa fa-plus-circle"></i> Timekeeping</a></li>
+                                <li><a href="KeepingHistory.html"><i class="fa fa-history"></i> Timekeeping history</a></li>
+                                <li><a href="calendar.html"><i class="fa fa-calendar"></i> Calendar</a></li>
+                                <li><a href="HourlyReport.html"><i class="fa fa-bar-chart"></i> Hourly report</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Mailbox</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#"><i class="fa fa-envelope"></i> Inbox</a></li>
+                                <li><a href="#"><i class="fa fa-arrow-left"></i> Sent</a></li>
+                                <li><a href="#"><i class="fa fa-edit"></i> Compose a new message</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Project</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#"><i class="fa fa-briefcase"></i> List of projects</a></li>
+                                <li><a href="#"><i class="fa fa-plus-circle"></i> Create a new project</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Blog</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="CompanyBlog.html"><i class="fa fa-leanpub"></i> Company blog</a></li>
+                                <li><a href="ForManagerBlog.html"><i class="fa fa-list"></i> Blog management</a></li>
+                                <li><a href="AddNewBlogForManager.html"><i class="fa fa-edit"></i> Write a new blog</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Online Learning</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="AllCourses.html"><i class="fa fa-leanpub"></i> All courses</a></li>
+                                <li><a href="MyCourse.html"><i class="fa fa-product-hunt"></i> My course</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Employees</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="employee.html"><i class="fa fa-address-card"></i> Employees</a></li>
+                                <li><a href="paycheck.html"><i class="fa fa-tag"></i> Paycheck</a></li>
+                                <li><a href="hrmleave.html"><i class="fa fa-bell-slash"></i> Please take leave</a></li>
+                                <li><a href="employeepoint.html"><i class="fa fa-star"></i> Employee grading</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="dropdown">
+                            <a class=" dropdown-toggle" data-toggle="dropdown"><i class="fa fa-bell"></i></a>
+                            <ul class="dropdown-menu" id="123" style="color:black;height:340px; width:320px; background:white;">
+                                <li class="hienthi">
+                                    <div class="thongbao">
+                                        <h3 class="chu" style="margin: 10px 25px 0px -15px; font-size:15px; background-color:white;">
+                                            <span style="background-color:white;">News</span>
+                                            <a class="hienthi" style="margin-left:23px; margin-right:-20px; text-decoration: none; background-color:white;color: #007eff;">Setting</a>
+                                            <span class="hienthi" style="margin-right: -13px;font-size: 5px;margin-top: 7px;"><i class="fa fa-square"></i></span>
+                                            <a class="hienthi" style="text-decoration: none; background-color:white;color: #007eff;">Mark all read</a>
+                                        </h3>
+                                    </div>
+                                    <ul style="margin-left:-19%;">
+                                        <li class="divider"></li>
+                                    </ul>
+                                    <ul class="mau" style="height:235px; overflow:hidden; list-style-type:none;"></ul>
+                                    <ul style="margin-left:-19%;">
+                                        <li class="divider"></li>
+                                    </ul>
+                                    <a href="#" style="margin-left:80px; color:#3c8dbc; text-decoration:underline; background-color:white; ">See all</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                User Name
+                                <span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu" id="abc">
+                                <li><a href="#">Edit information</a></li>
+                                <li class="divider"></li>
+                                <li><a href="#">Exit</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <div id="container">
+        <div>
+            <div id="elearning-header" style="background-image:url(/imgs/elearning/bg-header.jpg);">
+                <div class="elearning-heading-wrapper">
+                    <div class="ui container">
+                        <h1 class="elearning-heading elearning-uppercase" style="color:white;border-left: 6px solid #ffb606;">YOUR COURSE</h1>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div id="elearning-breadcrumb" style="display:flex">
+                    <a href="AllCourses.html" class="section" style="margin-right:15px; font-size:20px;"><span class="glyphicon glyphicon-home" style="margin-right:5px;"></span>Home</a>
+                    <i style="font-size:20px; margin-right:10px">-</i>
+                    <span style="font-size:20px">Your course</span>
+                </div>
+                <hr width="1100px" align="center" />
+                <div class="row">
+                    <div class="col-sm-9" style="margin-left: -125px;margin-right: 125px;">
+                        <div class="sreach" style="display:flex;width: 900px; height:50px; margin-left:250px; background-color: aliceblue;">
+                            <span style="margin-right:550px; margin-bottom:auto;margin-top:auto;"><a><span class="glyphicon glyphicon-th-list" style="margin-right:10px"></span></a>Result 0 - 0</span>
+                            <input style="margin-bottom:auto;margin-top:auto;border-radius:5px;" type="text" placeholder="Search ..." value="" ;" /><a style=" margin-bottom:auto;margin-top:auto;margin-left:2px; background-color:aliceblue"><i class="fa fa-search" style="font-size:20px;"></i></a>
+                        </div>
+                        <div style="clear:both"></div>
+                        <div style="margin-left:250px;margin-top:30px;">
+                            <div class="col-sm-3">
+                                <a href="#"><img src="imgs/zerodata/ys3.jpg" style="width:230px;height:150px;" /></a>
+                            </div>
+                            <div class="col-sm-8" style="">
+                                <a style="font-size:20px;">Title course</a>
+                                <br />
+                                <div>
+                                    <div class="col-sm-4" style="border-right:1px solid #ffb606 ">Teacher</div>
+                                    <div class="col-sm-4" style="border-right:1px solid #ffb606 ">Reviews: * * * * * *</div>
+                                    <div class="col-sm-3">99 Registered</div>
+                                </div>
+                                <div style="clear:both;"></div>
+                                <br />
+                                <br />
+                                <br />
+                                <div>
+                                    <div style="float:left;">
+                                        <span style="font-size:20px;color:forestgreen">Free</span>
+                                    </div>
+                                    <div style="float:right;">
+                                        <button style="font-size:25px;border-radius:20px; background-color:gold;color: white;font-weight: 600;border:none;"><a href="DetailCourse.html">Detail View</a></button>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-sm-3" style="">
+                        <div class="four wide column " style="margin-right:19px;">
+                            <div class="elearning-widget">
+                                <h2 class="elearning-widget-header elearning-uppercase ui header" style="border-left: 5px solid #ffb606!important;padding: .2em 0 .2em 12px!important">YOUR COURSES</h2>
+                                <div class="elearning-widget-content">
+                                    <div class="ui relaxed list elearning-widget-cat">
+                                        <div class="item elearning-widget-item"><a href="MyCourse.html" class="content elearning-widget-link elearning-uppercase">LIST COURSES</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="elearning-widget">
+                                <h2 class="elearning-widget-header elearning-uppercase ui header" style="border-left: 5px solid #ffb606!important;padding: .2em 0 .2em 12px!important"> ALL COURSES</h2>
+                                <div class="elearning-widget-content">
+                                    <div class="ui relaxed list elearning-widget-cat"></div>
+                                </div>
+                            </div>
+                            <div class="elearning-widget">
+                                <h2 class="elearning-widget-header elearning-uppercase ui header" style="border-left: 5px solid #ffb606!important;padding: .2em 0 .2em 12px!important"> NEW COURSE</h2>
+                                <div class="elearning-widget-content">
+                                    <div class="ui relaxed list elearning-widget-courses"></div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+
+<!--<div class="container-fluid">
+    <div class="row content" style="text-align:center;">
+        <div class="col-sm-2 sidenav">
+
+        </div>
+
+        <div class="col-sm-8">
+
+            <h1 style="padding-top:40px;text-align:center;text-transform:uppercase;">Timekeeper</h1>
+            <div>
+                <select class="form-control">
+                    <option>Choose an office for attendance</option>
+                    <option>Main office</option>
+                </select>
+            </div>
+        </div>
+        <div class="col-sm-2 sidenav">
+
+        </div>
+    </div>
+</div>-->
+
+<script>
+        $(document).ready(function () {
+            $('[dattoggle="tooltip"]').tooltip();
+        });
+</script>
+</html>
