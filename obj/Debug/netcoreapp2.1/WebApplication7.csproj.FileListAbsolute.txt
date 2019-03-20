@@ -129,3 +129,6 @@ C:\Users\DellPC\Desktop\quanlynhansu-master\quanlynhansu-master\WebApplication7\
 C:\Users\DellPC\Desktop\quanlynhansu-master\quanlynhansu-master\WebApplication7\obj\Debug\netcoreapp2.1\WebApplication7.dll
 C:\Users\DellPC\Desktop\quanlynhansu-master\quanlynhansu-master\WebApplication7\obj\Debug\netcoreapp2.1\WebApplication7.pdb
 C:\Users\DellPC\Desktop\quanlynhansu-master\quanlynhansu-master\WebApplication7\obj\Debug\netcoreapp2.1\WebApplication7.csproj.CopyComplete
+C:\Users\DellPC\Desktop\erp.ferya.org\obj\Debug\netcoreapp2.1\WebApplication7.csprojAssemblyReference.cache
+C:\Users\DellPC\Desktop\erp.ferya.org\obj\Debug\netcoreapp2.1\WebApplication7.dll
+C:\Users\DellPC\Desktop\erp.ferya.org\obj\Debug\netcoreapp2.1\WebApplication7.pdb

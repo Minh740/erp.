@@ -12587,11 +12587,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\DellPC\\Desktop\\quanlynhansu-master\\quanlynhansu-master\\WebApplication7\\WebApplication7.csproj",
+      "projectUniqueName": "C:\\Users\\DellPC\\Desktop\\erp.ferya.org\\WebApplication7.csproj",
       "projectName": "WebApplication7",
-      "projectPath": "C:\\Users\\DellPC\\Desktop\\quanlynhansu-master\\quanlynhansu-master\\WebApplication7\\WebApplication7.csproj",
+      "projectPath": "C:\\Users\\DellPC\\Desktop\\erp.ferya.org\\WebApplication7.csproj",
       "packagesPath": "C:\\Users\\DellPC\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\DellPC\\Desktop\\quanlynhansu-master\\quanlynhansu-master\\WebApplication7\\obj\\",
+      "outputPath": "C:\\Users\\DellPC\\Desktop\\erp.ferya.org\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
