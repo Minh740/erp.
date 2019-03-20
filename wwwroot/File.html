@@ -227,7 +227,7 @@
     </style>
 </head>
 <body class="hold-transition skin-blue sidebar-mini">
-    <header class="main-header">
+     <header class="main-header">
         <div class="topnav">
             <nav class="navbar navbar-inverse">
                 <div class="container-fluid">
@@ -242,7 +242,7 @@
                             </ul>
                         </li>
                         <li class="dropdown">
-                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Timekeeping </a>
+                            <a class="dropdown-toggle " data-toggle="dropdown" href="#">Timekeeping </a>
                             <ul class="dropdown-menu" style="border: none;">
                                 <li><a href="TimeKeeping.html"><i class="fa fa-plus-circle"></i> Timekeeping</a></li>
                                 <li><a href="KeepingHistory.html"><i class="fa fa-history"></i> Timekeeping history</a></li>
@@ -261,8 +261,8 @@
                         <li class="dropdown">
                             <a class="dropdown-toggle" data-toggle="dropdown" href="#">Project</a>
                             <ul class="dropdown-menu" style="border: none;">
-                                <li><a href="#"><i class="fa fa-briefcase"></i> List of projects</a></li>
-                                <li><a href="#"><i class="fa fa-plus-circle"></i> Create a new project</a></li>
+                                <li><a href="ListProject.html"><i class="fa fa-briefcase"></i> List of projects</a></li>
+                                <li><a href="CreateProject.html"><i class="fa fa-plus-circle"></i> Create a new project</a></li>
                             </ul>
                         </li>
                         <li class="dropdown">
@@ -403,64 +403,64 @@
             </div>
         </div>
     </div>
-        <div class="table-responsive">
-            <table class="table table-hover" style="width:100%; color:grey;margin-top: 20px;">
-                <thead>
-                    <tr>
-                        <th style="text-transform:uppercase;">NAME</th>
-                        <th rowspan="2">TYPE</th>
-                        <th>SIZE</th>
-                        <th > DATE CREATED</th>
-                        <th>MADE BY</th>
-                        <th></th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><i class="fa fa-folder"></i> dfd</td>
-                        <td>fdfd</td>
-                        <td>fdf</td>
-                        <td>dfd</td>
-                        <td>dfdf</td>
-                        <td style="float: right;">
-                            <a href="SearchFile.html" style="color:grey;margin-right: 20px;" title="See directory contents"><i class="fa fa-search"></i></a>
-                            <a href="#" style="color:grey;margin-right: 20px;" data-toggle="modal" data-target="#myModal3" title="Edit content"><i class="fa fa-cog"></i></a>
-                            <a href="#" style="color:grey;" title="Delete this folder"><i class="fa fa-trash"></i></a>
-                            <!-- Modal -->
-                            <div class="modal fade" id="myModal3" role="dialog">
-                                <div class="modal-dialog">
+    <div class="table-responsive">
+        <table class="table table-hover" style="width:100%; color:grey;margin-top: 20px;">
+            <thead>
+                <tr>
+                    <th style="text-transform:uppercase;">NAME</th>
+                    <th rowspan="2">TYPE</th>
+                    <th>SIZE</th>
+                    <th> DATE CREATED</th>
+                    <th>MADE BY</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><i class="fa fa-folder"></i> dfd</td>
+                    <td>fdfd</td>
+                    <td>fdf</td>
+                    <td>dfd</td>
+                    <td>dfdf</td>
+                    <td style="float: right;">
+                        <a href="SearchFile.html" style="color:grey;margin-right: 20px;" title="See directory contents"><i class="fa fa-search"></i></a>
+                        <a href="#" style="color:grey;margin-right: 20px;" data-toggle="modal" data-target="#myModal3" title="Edit content"><i class="fa fa-cog"></i></a>
+                        <a href="#" style="color:grey;" title="Delete this folder"><i class="fa fa-trash"></i></a>
+                        <!-- Modal -->
+                        <div class="modal fade" id="myModal3" role="dialog">
+                            <div class="modal-dialog">
 
-                                    <!-- Modal content-->
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                            <h2 class="modal-title" style="float:left;">Change directory information</h2>
-                                        </div>
-                                        <div class="modal-body">
-                                            <form>
-                                                <div class="form-group">
-                                                    <label style="float:left;">Folder name</label>
-                                                    <input class="form-control">
-                                                </div>
-                                                <div class="form-group">
-                                                    <label style="float:left;">Describe</label>
-                                                    <input class="form-control">
-                                                </div>
-
-                                            </form>
-                                        </div>
-                                        <div class="modal-footer">
-                                            <button type="button" class="btn btn-default" data-dismiss="modal" style="border: none;border-radius: 17px;margin-right: 10px;padding-left: 20px;padding-right: 20px;">Close</button>
-                                            <button type="submit" class="nutchamcong" style="border:none;padding-left: 20px;padding-right: 20px;"><a href="File.html" style="color:white;">Save</a></button>
-                                        </div>
+                                <!-- Modal content-->
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                        <h2 class="modal-title" style="float:left;">Change directory information</h2>
                                     </div>
+                                    <div class="modal-body">
+                                        <form>
+                                            <div class="form-group">
+                                                <label style="float:left;">Folder name</label>
+                                                <input class="form-control">
+                                            </div>
+                                            <div class="form-group">
+                                                <label style="float:left;">Describe</label>
+                                                <input class="form-control">
+                                            </div>
 
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-default" data-dismiss="modal" style="border: none;border-radius: 17px;margin-right: 10px;padding-left: 20px;padding-right: 20px;">Close</button>
+                                        <button type="submit" class="nutchamcong" style="border:none;padding-left: 20px;padding-right: 20px;"><a href="File.html" style="color:white;">Save</a></button>
+                                    </div>
                                 </div>
+
                             </div>
-                        </td>
-                    </tr>
-                </tbody>
-                </table>
-            </div>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 </body>
 </html>
