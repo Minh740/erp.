@@ -242,6 +242,7 @@
             .ls:hover {
                 color: black;
                 cursor: pointer;
+
             }
 
         .maychamcong {
@@ -326,16 +327,9 @@
             background-color: #1377da;
         }
 
-        table {
+        table, th, td {
+            border: 1px solid rgb(208, 208, 208);
             border-collapse: collapse;
-            width: 100%;
-            background-color: white;
-        }
-
-        th, td {
-            padding: 8px;
-            text-align: left;
-            border-bottom: 1px solid #ddd;
         }
     </style>
 </head>
@@ -493,7 +487,7 @@
 
                 <a class="ls" style="margin-left: 15px; background-color: #eee;border-color: #eee;" href="Vision.html"><i class="fas fa-folder-open"></i> Vision</a>
                 <a style="margin-left: 24px;background-color: #eee;border-color: #eee;color:#777"><i class="fa fa-edit"></i> Kiwi</a>
-                <a  data-toggle="modal" data-target="#myModal" title="Add Work" style=" color: white; margin-left: 15px;background-color: black;border-radius:15px;width: 519px;height: 100px;padding:10px;margin-left:70px"><i class="fa fa-plus-circle"></i> Add Work</a>
+                <a data-toggle="modal" data-target="#myModal" title="Add Work" style=" color: white; margin-left: 15px;background-color: black;border-radius:15px;width: 519px;height: 100px;padding:10px;margin-left:70px"><i class="fa fa-plus-circle"></i> Add Work</a>
             </div>
             <div class="container" style="display: inline-flex;padding-left: 320px;    margin-top: 40px;">
                 <a href="#" style="height: 20px;width: 20px;color: #555;"><i class="fa fa-chevron-left"></i></a>
@@ -513,10 +507,10 @@
     <div class="container-fluid" style="background-color:#eee; margin-top: 5px;">
         <div>
             <input placeholder="Key work" type="text" />
-            <label style="margin-left:10px">Assign: </label>
+            <label class="ls" style="margin-left:20px">Assign: </label>
             <div class="dropdown" style="margin-top: 20px;">
 
-                <div class="ls dropdown-toggle" data-toggle="dropdown" style="border: none;">
+                <div class=" dropdown-toggle" data-toggle="dropdown" style="border: none;">
                     <span>All</span>
                     <i class="fa fa-caret-down" style="float: right;"></i>
                 </div>
@@ -529,10 +523,10 @@
 
                 </ul>
             </div>
-            <label style="margin-left:10px">Priority:</label>
+            <label class="ls" style="margin-left:20px">Priority:</label>
             <div class="dropdown" style="margin-top: 20px;">
 
-                <div class="ls dropdown-toggle" data-toggle="dropdown" style="border: none;">
+                <div class=" dropdown-toggle" data-toggle="dropdown" style="border: none;">
                     <span>All</span>
                     <i class="fa fa-caret-down" style="float: right;"></i>
                 </div>
@@ -546,10 +540,10 @@
 
                 </ul>
             </div>
-            <label style="margin-left:10px">Type:</label>
+            <label class="ls" style="margin-left:20px">Type:</label>
             <div class="dropdown" style="margin-top: 20px;">
 
-                <div class="ls dropdown-toggle" data-toggle="dropdown" style="border: none;">
+                <div class="dropdown-toggle" data-toggle="dropdown" style="border: none;">
                     <span>All</span>
                     <i class="fa fa-caret-down" style="float: right;"></i>
                 </div>
@@ -568,10 +562,10 @@
                 </ul>
             </div>
 
-            <label style="margin-left:10px">Status:</label>
+            <label class="ls" style="margin-left:20px">Status:</label>
             <div class="dropdown" style="margin-top: 20px;">
 
-                <div class="ls dropdown-toggle" data-toggle="dropdown" style="border: none;">
+                <div class=" dropdown-toggle" data-toggle="dropdown" style="border: none;">
                     <span>All</span>
                     <i class="fa fa-caret-down" style="float: right;"></i>
                 </div>
@@ -590,45 +584,9 @@
                 </ul>
             </div>
 
-            <button type="button" style="border-radius:12px;background-color:#1678c2">Search</button>
+            <button type="button" class="btn btn-primary" style="border-radius: 16px;margin-left: 20px;">Search</button>
             <hr />
         </div>
-        <table>
-            <tbody>
-                <tr>
-                    <th></th>
-                    <th>Name</th>
-                    <th>Tab</th>
-                    <th>
-                        Job Code
-                    </th>
-                    <th>Version</th>
-                    <th>Type</th>
-                    <th>Assgign</th>
-                    <th>Day</th>
-                    <th>Status</th>
-                    <th></th>
-
-                </tr>
-                <tr>
-                    <td>Peter</td>
-                    <td>Griffin</td>
-                    <td>$100</td>
-                    <td>$100</td>
-                    <td>$100</td>
-                    <td>$100</td>
-                    <td>$100</td>
-                    <td>$100</td>
-                    <td>$100</td>
-                    <td>$100</td>
-                </tr>
-
-
-            </tbody>
-        </table>
-
-
-
         <!-- Modal -->
         <div class="container">
             <div class="modal fade" id="myModal" role="dialog">
@@ -653,7 +611,30 @@
         </div>
     </div>
 
-
+    <div class="table-responsive">
+        <table class="table" style="overflow: hidden;border-top: 1px solid rgb(208, 208, 208);height: 521px;">
+            <thead>
+                <tr>
+                    <th style="color:#e798ba;">Wait for processing (0)</th>
+                    <th style="color:#3498db;">Delivered (0)</th>
+                    <th style="color:#2980b9;">Solving (0)</th>
+                    <th style="color:#ac0;">Need to be approved (0)</th>
+                    <th style="color:#8e44ad;">Browsing (0)</th>
+                    <th style="color:#CC4C9A;">Complete but error (0)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 
 
     <script>
