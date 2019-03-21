@@ -268,6 +268,43 @@
         .title:hover {
             color: #3498db;
         }
+        .inputfile {
+            width: 0.1px;
+            height: 0.1px;
+            opacity: 0;
+            overflow: hidden;
+            position: absolute;
+            z-index: -1;
+        }
+
+            .inputfile:focus + label,
+            .inputfile.has-focus + label {
+                outline: 1px dotted #000;
+                outline: -webkit-focus-ring-color auto 5px;
+            }
+
+            .inputfile + label i,
+            .inputfile + label svg {
+                width: 1em;
+                height: 1em;
+                vertical-align: middle;
+                fill: currentColor;
+                margin-top: -0.25em;
+                margin-right: 0.25em;
+            }
+
+
+            .inputfile:focus + label,
+            .inputfile.has-focus + label,
+            .inputfile + label:hover {
+                color: #FF5722;
+            }
+        .box {
+            border-top: none;
+            box-shadow: none;
+            font-size: 10px;
+        }
+
     </style>
 </head>
 <body class="hold-transition skin-blue sidebar-mini">
@@ -428,26 +465,29 @@
                         <tr>
                             <td>1. sas</td>
                             <td>
-                                <select class="w3-select w3-border" style="border-radius:5px">
+                                <select  style="width:200px;">
                                     <option value="" disabled selected>-----</option>
                                     <option value="1"></option>
                                 </select>
                             </td>
                             <td>
-                                <div style="width: 80px !important;">
+                                <div style="width: 80px">
                                     <a style="text-decoration:none; color:#3498db; font-size: 12px;">All employee</a>
                                     <br />
                                     <a style="text-decoration:none; color:#3498db; font-size: 12px;">Uncheck all</a>
                                 </div>
                             </td>
                             <td>
-                                <input class="w3-input w3-border w3-round-large" name="last" type="text">
+                                <input type="text" style="width:200px;" name="">
                             </td>
                             <td>
-                                <i class="fa fa-link"></i> File attached...
+                                <div class="box">
+                                    <input type="file" name="file-2[]" id="file-2" class="inputfile inputfile-2" data-multiple-caption="{count} files selected" multiple="">
+                                    <label for="file-2"><i class="fa fa-paperclip"></i><span>File attached...</span></label>
+                                </div>
                             </td>
                             <td>
-                                <a href="#"><label style="font-size:12px; background-color: #2185D0;border-color: #2185D0;color: #FFF;">10</label></a>
+                                <a href="#"><label style="font-size:12px; background-color: #2185D0;border-color: #2185D0;color: #FFF;padding: 7px 10px;">10</label></a>
                             </td>
                         </tr>
                     </table>
@@ -481,6 +521,34 @@
                 x.style.display = "none";
             }
         }
+
+        'use strict';
+
+        ; (function (document, window, index) {
+            var inputs = document.querySelectorAll('.inputfile');
+            Array.prototype.forEach.call(inputs, function (input) {
+                var label = input.nextElementSibling,
+                    labelVal = label.innerHTML;
+
+                input.addEventListener('change', function (e) {
+                    var fileName = '';
+                    if (this.files && this.files.length > 1)
+                        fileName = (this.getAttribute('data-multiple-caption') || '').replace('{count}', this.files.length);
+                    else
+                        fileName = e.target.value.split('\\').pop();
+
+                    if (fileName)
+                        label.querySelector('span').innerHTML = fileName;
+                    else
+                        label.innerHTML = labelVal;
+                });
+
+                // Firefox bug fix
+                input.addEventListener('focus', function () { input.classList.add('has-focus'); });
+                input.addEventListener('blur', function () { input.classList.remove('has-focus'); });
+            });
+        }(document, window, 0));
+
     </script>
 </body>
 </html>
