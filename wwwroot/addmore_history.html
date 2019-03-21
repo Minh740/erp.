@@ -3,7 +3,9 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Please take leave</title>
+    <title>
+        Employee grading history
+    </title>
     <!-- Tell the browser to be responsive to screen width -->
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <!-- Bootstrap 3.3.7 -->
@@ -53,14 +55,7 @@
             color: white;
             border-color: #3498db;
         }
-
-        .container-fluid {
-            /*font-size: 1.3em;
-            background: #3498db;
-            position: fixed;
-            z-index: 700;
-            width: 100%;*/
-        }
+        
 
         .navbar-inverse :hover {
             background-color: #3498db;
@@ -125,7 +120,7 @@
         .h3, h3 {
             margin-top: 30px;
             margin-bottom: 19px;
-            width: 7%;
+            width: 20%;
         }
 
         #notifywidget h3 {
@@ -460,7 +455,9 @@
         </header>
         <div class="heading">
             <div class="container">
-                <h3 class="title">Please take leave</h3>
+                <h3 class="title">
+                    Employee grading history
+                </h3>
                 <ul class="nav nav-tabs" style="display:block; list-style-type:disc; ">
                     <li class="active">
                         <a data-toggle="tab" href="#" style="cursor:pointer;">
@@ -514,7 +511,7 @@
 
                                                 <tr>
                                                     <td style="text-align:right;">
-                                                        Source
+                                                        Headquarters
                                                     </td>
                                                     <td>
                                                         <div class="form-group">
@@ -522,9 +519,8 @@
                                                                 <select class="form-control">
                                                                     <option>All</option>
                                                                     <option>
-                                                                        Hand in
+                                                                        Main office
                                                                     </option>
-                                                                    <option>Import</option>
                                                                 </select>
                                                             </div>
                                                         </div>
@@ -533,23 +529,14 @@
 
                                                 <tr>
                                                     <td style="text-align:right;">
-                                                        Form of payment
+                                                        Criteria
                                                     </td>
                                                     <td>
                                                         <div class="form-group">
                                                             <div class="col-sm-10">
                                                                 <select class="form-control">
                                                                     <option>All</option>
-                                                                    <option>
-                                                                        Pay once
-                                                                    </option>
-                                                                    <option>
-                                                                        Pay by day
-                                                                    </option>
-                                                                    <option>
-                                                                        Pay by month
-                                                                    </option>
-                                                                    <option>Pay by year</option>
+                                                                    <option></option>
                                                                 </select>
                                                             </div>
                                                         </div>
@@ -584,7 +571,7 @@
 
                                                 <tr>
                                                     <td>
-                                                        <button class="btn blue" type="button" style="width:315%;">Search</button>
+                                                        <button class="btn blue" type="button" style="width:360%;">Search</button>
                                                     </td>
                                                 </tr>
 
@@ -606,10 +593,10 @@
                 <div class="headingbuttons">
                     <div style="cursor: pointer; margin-top: 55px;">
                         <span class="time">
-                            <span class="cog">
+                            <a class="cog" href="EmployeeGradingCriteria2.html" style="text-decoration:none">
                                 <i class="fa fa-cog"></i>
                                 Setting criteria
-                            </span>
+                            </a>
 
                             <span class="cog" data-toggle="modal" data-target="#myModal"><i class="fa fa-download"></i>Export Excel</span>
 
@@ -697,7 +684,7 @@
                     <span>: </span>
                     <span> ruacon</span>
                 </span>
-                <a style="text-decoration:none; color:#ffffff" href="my_paycheck.html"><i class="fa fa-times" title="Remove this condition"></i></a>
+                <a style="text-decoration:none; color:#ffffff" href="employeepoint.html"><i class="fa fa-times" title="Remove this condition"></i></a>
             </span>
         </div>
 
