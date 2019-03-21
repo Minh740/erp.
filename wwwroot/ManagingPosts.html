@@ -1,9 +1,9 @@
-﻿﻿<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Project -> Name</title>
+    <title>Employees</title>
     <!-- Tell the browser to be responsive to screen width -->
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <!-- Bootstrap 3.3.7 -->
@@ -51,26 +51,17 @@
     <link href="/cp/alertify/css/themes/default.min.css" rel="stylesheet" />
     <script src="/cp/alertify/alertify.min.js"></script>
     <!--tinyamce-->
+    <script src="plugin/tinymce/tinymce.min.js"></script>
     <script src="plugins/alertify/alertify.js"></script>
     <script src="plugins/alertify/alertify.min.js"></script>
     <link href="plugins/alertify/css/themes/default.min.css" rel="stylesheet" />
     <link href="plugins/alertify/css/alertify.min.css" rel="stylesheet" />
-
-    <!--<script type="text/javascript" src="dist/tinymce.min.js"></script>-->
-
-    <script src="../tinymce/tinymce.min.js"></script>
+    <script src="plugins/tinymce/tinymce.min.js"></script>
     <script>
         tinymce.init({
-            branding: false,
-            menubar: false,
-            relative_urls: false,
-            remove_script_host: false,
-            entity_encoding: "raw",
-            valid_elements: '*[*]',
             selector: "textarea.tinymce",
             theme: "modern",
             height: 300,
-            forced_root_block: "",
             plugins: [
                 "advlist autolink link image lists charmap print preview hr anchor pagebreak spellchecker", "searchreplace wordcount visualblocks visualchars code fullscreen insertdatetime media nonbreaking", "save table contextmenu directionality emoticons template paste textcolor"
             ],
@@ -78,7 +69,6 @@
         });
     </script>
     <style>
-
         .skin-blue .wrapper {
             background-color: white;
         }
@@ -577,7 +567,7 @@
                             </div>
                             <div style="margin-top: 40px;">
                                 <label>Attached files</label>
-                                <div>
+                                <div style="margin-top: 20px;">
                                     <a style="text-decoration:none;text-align: center;background-color: #fff;display: flex;cursor: pointer;justify-content: center;align-items: center;margin: -5px;height: 123px;width: 123px;border: 2px dotted #d0d0d0;">
                                         <i class="fa fa-cloud-upload" style="float:left;"></i>
                                         <span style="margin-left:10px;">Upload the file</span>
@@ -593,54 +583,56 @@
                 </div>
             </div>
         </div>
-    </div>
-    <script>function myFunction() {
-            var txt;
-            var person = prompt("Enter the folder name you want to create:");
-            if (person == null || person == "") {
-                txt = "";
-            } else {
-                txt =  person ;
+        <script>
+            function myFunction() {
+                var txt;
+                var person = prompt("Enter the folder name you want to create:");
+                if (person == null || person == "") {
+                    txt = "";
+                } else {
+                    txt = person;
+                }
+                document.getElementById("demo").innerHTML = txt;
             }
-            document.getElementById("demo").innerHTML = txt;
-        }
 
-        function myFunction2() {
-            var txt;
-            var person = prompt("Enter the title of the article:");
-            if (person == null || person == "") {
-                txt = "";
-            } else {
-                txt = person;
+            function myFunction2() {
+                var txt;
+                var person = prompt("Enter the title of the article:");
+                if (person == null || person == "") {
+                    txt = "";
+                } else {
+                    txt = person;
+                }
+                document.getElementById("demo").innerHTML = txt;
             }
-            document.getElementById("demo").innerHTML = txt;
-        }</script>
-    <script>var main = document.querySelector('main'),
-            tree = new VanillaTree(main, {
-                contextmenu: [{
-                    label: 'Add',
-                    action: function (id) {
-                        var txt;
-                        var person = prompt("Enter the folder name you want to create:");
-                        if (person == null || person == "") {
-                            txt = "";
-                        } else {
-                            txt = person;
+        </script>
+        <script>
+            var main = document.querySelector('main'),
+                tree = new VanillaTree(main, {
+                    contextmenu: [{
+                        label: 'Add',
+                        action: function (id) {
+                            var txt;
+                            var person = prompt("Enter the folder name you want to create:");
+                            if (person == null || person == "") {
+                                txt = "";
+                            } else {
+                                txt = person;
+                            }
+                            document.getElementById("demo").innerHTML = txt;
                         }
-                        document.getElementById("demo").innerHTML = txt;
-                    }
-                }, {
-                    label: 'Create',
-                    action: function (id) {
-                        var txt;
-                        var person = prompt("Enter the title of the article:");
-                        if (person == null || person == "") {
-                            txt = "";
-                        } else {
-                            txt = person;
+                    }, {
+                        label: 'Create',
+                        action: function (id) {
+                            var txt;
+                            var person = prompt("Enter the title of the article:");
+                            if (person == null || person == "") {
+                                txt = "";
+                            } else {
+                                txt = person;
+                            }
+                            document.getElementById("demo").innerHTML = txt;
                         }
-                        document.getElementById("demo").innerHTML = txt;
-                    }
                     },
                     {
                         label: 'Edit',
@@ -661,39 +653,40 @@
                             confirm("Do you really want to delete?");
                         }
                     }]
+                });
+            tree.add({
+                label: 'Label A',
+                id: 'a',
+                opened: true
             });
-        tree.add({
-            label: 'Label A',
-            id: 'a',
-            opened: true
-        });
 
-        tree.add({
-            label: 'Label B',
-            id: 'b'
-        });
+            tree.add({
+                label: 'Label B',
+                id: 'b'
+            });
 
 
 
-        // add new nodes
-        tree.add(options);
+            // add new nodes
+            tree.add(options);
 
-        // move a node to parent
-        tree.move(id, parentId);
+            // move a node to parent
+            tree.move(id, parentId);
 
-        // remove a node
-        tree.remove(id);
+            // remove a node
+            tree.remove(id);
 
-        // open a node
-        tree.open(id);
+            // open a node
+            tree.open(id);
 
-        // close a node
-        tree.close(id);
+            // close a node
+            tree.close(id);
 
-        // toggle a node
-        tree.toggle(id);
+            // toggle a node
+            tree.toggle(id);
 
-        // select a node
-        tree.select(id);</script>
+            // select a node
+            tree.select(id);
+        </script>
 </body>
 </html>
