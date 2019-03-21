@@ -1,9 +1,10 @@
+﻿@@ -0,0 +1,708 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Employees</title>
+    <title>Project -> Name</title>
     <!-- Tell the browser to be responsive to screen width -->
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <!-- Bootstrap 3.3.7 -->
@@ -51,24 +52,27 @@
     <link href="/cp/alertify/css/themes/default.min.css" rel="stylesheet" />
     <script src="/cp/alertify/alertify.min.js"></script>
     <!--tinyamce-->
-    <script src="plugin/tinymce/tinymce.min.js"></script>
     <script src="plugins/alertify/alertify.js"></script>
     <script src="plugins/alertify/alertify.min.js"></script>
     <link href="plugins/alertify/css/themes/default.min.css" rel="stylesheet" />
     <link href="plugins/alertify/css/alertify.min.css" rel="stylesheet" />
-    <script src="plugins/tinymce/tinymce.min.js"></script>
-    <script>
-        tinymce.init({
-            selector: "textarea.tinymce",
-            theme: "modern",
-            height: 300,
-            plugins: [
-                "advlist autolink link image lists charmap print preview hr anchor pagebreak spellchecker", "searchreplace wordcount visualblocks visualchars code fullscreen insertdatetime media nonbreaking", "save table contextmenu directionality emoticons template paste textcolor"
-            ],
-            toolbar: "code insertfile undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image | print preview media fullpage | forecolor backcolor emoticons",
-        });
-    </script>
+
+    <script type="text/javascript" src="dist/tinymce.min.js"></script>
+    <script type="text/javascript">
+tinymce.init({
+            selector: "textarea",
+            plugins: ["table", "code"],
+            tools: "inserttable",
+            menu: {
+                edit: { title: 'Edit', items: 'undo redo | cut copy paste | selectall' },
+                view: { title: 'View', items: 'visualaid code' },
+                table: { title: 'Table', items: 'inserttable' },
+            },
+            toolbar: "undo redo | bold italic | table | code"
+
+        });</script>
     <style>
+
         .skin-blue .wrapper {
             background-color: white;
         }
@@ -391,6 +395,20 @@
         .title:hover {
             color: #3498db;
         }
+
+        .nutchamcong {
+            background-color: #1377da;
+            color: white;
+            text-shadow: none;
+            background-image: none;
+            border-radius: 20px;
+            padding: 6px;
+        }
+
+            .nutchamcong:hover {
+                background-color: cornflowerblue;
+                cursor: pointer;
+            }
     </style>
 </head>
 <body class="hold-transition skin-blue sidebar-mini">
@@ -412,7 +430,7 @@
                             <li class="dropdown">
                                 <a class="dropdown-toggle" data-toggle="dropdown" href="#">Timekeeping </a>
                                 <ul class="dropdown-menu">
-                                    <li><a href="doitruso.html"><i class="fa fa-plus-circle"></i> Timekeeping</a></li>
+                                    <li><a href="TimeKeeping.html"><i class="fa fa-plus-circle"></i> Timekeeping</a></li>
                                     <li><a href="KeepingHistory.html"><i class="fa fa-history"></i> Timekeeping history</a></li>
                                     <li><a href="calendar.html"><i class="fa fa-calendar"></i> Calendar</a></li>
                                     <li><a href="HourlyReport.html"><i class="fa fa-bar-chart"></i> Hourly report</a></li>
@@ -500,67 +518,15 @@
         </header>
         <div class="heading">
             <div class="container">
-
-                <h3 class="title">Employees</h3>
-                <div style="display:flex ;margin-top: -32px; float: right;">
-                    <div style="margin-right:30px">
-                        <div>
-                            <a data-toggle="modal" data-target="#myModal" style="color:black;text-decoration:none;cursor:pointer;"> <i class="fas fa-cog"></i> <span>Setting</span></a>
-                            <div class="modal" id="myModal">
-                                <div class="modal-dialog">
-                                    <div class="modal-content">
-
-                                        <!-- Modal Header -->
-                                        <div class="modal-header" style="background-color:#f0f0f0">
-                                            <h4 class="modal-title">Update Wiki</h4>
-                                            <hr />
-
-                                        </div>
-
-                                        <!-- Modal body -->
-                                        <div>
-                                            <div style="margin:20px">
-                                                <div> <span>Name*</span></div>
-                                                <div>
-                                                    <input type="text" class="form-control" />
-                                                </div>
-                                                <div>
-                                                    <div>
-                                                        <span>Editorial board</span>
-                                                    </div>
-                                                    <div>
-                                                        <select class="form-control">
-                                                            <option>abc</option>
-                                                            <option>abc1</option>
-                                                        </select>
-                                                    </div>
-                                                </div>
-                                                <span style="font-size:10px">
-                                                    Editorial board
-                                                </span>
-                                            </div>
-                                            <!-- Modal footer -->
-                                            <div class="modal-footer">
-                                                <button type="button" class="btn btn-group" data-dismiss="modal">Close</button>
-                                                <button type="button" style="border-radius:20px;background-color:#2980b9;color: white;border: none;width: 100px;height: 40px;" data-dismiss="modal">Update</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div>
-                        <a href="ManagingPosts1.html" style="color:black;text-decoration:none; "><i class="far fa-edit" ></i>  <span>Managing pots</span></a>
-                    </div>
-
+                <div style="display:flex;">
+                    <h3 class="title" style="cursor:pointer;">Name </h3>
+                    <i class="fa fa-chevron-right" style="font-size: 29px;margin-top: 28px;color: gray;margin-left: 10px;margin-right: 10px;"></i>
+                    <h3 class="title" style="cursor:pointer;"> Wiki - Documents</h3>
                 </div>
                 <ul class="nav nav-tabs" style="display:block; list-style-type:disc; ">
                     <li class="active">
                         <a data-toggle="tab" href="#" style="cursor:pointer;">
-                            <span style="color:black;">Add new</span>
+                            <span style="color:black;">Editor</span>
                         </a>
                     </li>
                 </ul>
@@ -568,19 +534,162 @@
         </div>
         <div>
             <div>
-
-                <div style="border-right-style:inset;height:500px;width:20%" class="col-4">
-                   
+                <div class="col-sm-4" style="margin-top: 40px;">
+                    <div>
+                        <div class="col-sm-4">
+                            Category
+                            <main style="margin-left: -48px;">
+                                <p id="demo"></p>
+                            </main>
+                        </div>
+                        <div class="col-sm-8">
+                            <a href="javascript:void(0)" onclick="myFunction()">Create a category</a>
+                            <a href="javascript:void(0)" onclick="myFunction2()" style="margin-left: 31px;">Create articled</a>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-8"></div>
+                <div class="col-sm-8 " style="margin-top: 40px;border-left-style: outset;">
+                    <div>
+                        <div class="col-sm-8 form" style="border-right-style: inset;">
+                            <div style="display:flex;">
+                                <div>
+                                    <label>Post title</label>
+                                    <span style="color:red;">*</span>
+                                    <input style="display: block;height: 33px;width: 400px;" type="text" />
+                                </div>
+                                <div style="margin-left:20px;">
+                                    <label>Status</label>
+                                    <select style="display: block;height: 32px;width: 100px;">
+                                        <option>Disabled</option>
+                                        <option>Effective</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div style="margin-top: 40px;">
+                                <label>Content</label>
+                                <textarea style="display: block;"></textarea>
+                            </div>
+                            <div style="margin-top: 40px;">
+                                <label>Attached files</label>
+                                <div>
+                                    <a style="text-decoration:none;text-align: center;background-color: #fff;display: flex;cursor: pointer;justify-content: center;align-items: center;margin: -5px;height: 123px;width: 123px;border: 2px dotted #d0d0d0;">
+                                        <i class="fa fa-cloud-upload" style="float:left;"></i>
+                                        <span style="margin-left:10px;">Upload the file</span>
+                                        <input type="file" style="opacity: 0; position: absolute;" />
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4" style="text-align: center;">
+                            <button class="nutchamcong" style="width: 60%;border: none;"> Save information</button>
+                        </div>
+                    </div>
+                </div>
             </div>
-
         </div>
     </div>
-   
+    <script>
+function myFunction() {
+            var txt;
+            var person = prompt("Enter the folder name you want to create:");
+            if (person == null || person == "") {
+                txt = "";
+            } else {
+                txt =  person ;
+            }
+            document.getElementById("demo").innerHTML = txt;
+        }
+
+        function myFunction2() {
+            var txt;
+            var person = prompt("Enter the title of the article:");
+            if (person == null || person == "") {
+                txt = "";
+            } else {
+                txt = person;
+            }
+            document.getElementById("demo").innerHTML = txt;
+        }</script>
+    <script>
+var main = document.querySelector('main'),
+            tree = new VanillaTree(main, {
+                contextmenu: [{
+                    label: 'Add',
+                    action: function (id) {
+                        var txt;
+                        var person = prompt("Enter the folder name you want to create:");
+                        if (person == null || person == "") {
+                            txt = "";
+                        } else {
+                            txt = person;
+                        }
+                        document.getElementById("demo").innerHTML = txt;
+                    }
+                }, {
+                    label: 'Create',
+                    action: function (id) {
+                        var txt;
+                        var person = prompt("Enter the title of the article:");
+                        if (person == null || person == "") {
+                            txt = "";
+                        } else {
+                            txt = person;
+                        }
+                        document.getElementById("demo").innerHTML = txt;
+                    }
+                    },
+                    {
+                        label: 'Edit',
+                        action: function (id) {
+                            var txt;
+                            var person = prompt("Do you really want to delete?");
+                            if (person == null || person == "") {
+                                txt = "";
+                            } else {
+                                txt = person;
+                            }
+                            document.getElementById("demo").innerHTML = txt;
+                        }
+                    },
+                    {
+                        label: 'Delete',
+                        action: function (id) {
+                            confirm("Do you really want to delete?");
+                        }
+                    }]
+            });
+        tree.add({
+            label: 'Label A',
+            id: 'a',
+            opened: true
+        });
+
+        tree.add({
+            label: 'Label B',
+            id: 'b'
+        });
 
 
 
-   
+        // add new nodes
+        tree.add(options);
+
+        // move a node to parent
+        tree.move(id, parentId);
+
+        // remove a node
+        tree.remove(id);
+
+        // open a node
+        tree.open(id);
+
+        // close a node
+        tree.close(id);
+
+        // toggle a node
+        tree.toggle(id);
+
+        // select a node
+        tree.select(id);</script>
 </body>
 </html>
