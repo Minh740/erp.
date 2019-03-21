@@ -448,259 +448,321 @@
         </header>
         <div class="heading">
             <div class="container">
-                <div style="display:flex;">
-                    <h3 class="title" style="cursor:pointer;">Name </h3>
-                    <i class="fa fa-chevron-right" style="font-size: 29px;margin-top: 28px;color: gray;margin-left: 10px;margin-right: 10px;"></i>
-                    <h3 class="title" style="cursor:pointer;"> Wiki - Documents</h3>
+
+                </nav>
+            </div>
+            </header>
+            <div class="container" style="background-color: #eee;height: 106px;width: 100%;margin-top: -19px;">
+
+                <div style="margin-bottom: -11px;margin-top: -20px;">
+                    <br />
+                    <a class="abc tab-content" href="Project.html">
+                        <span>
+                            <h2 style="cursor:pointer;">Project</h2>
+                        </span>
+                    </a>
+                    <div>
+
+                    </div>
+                    <ul class="nav nav-tabs" style="margin-right:-202px;padding-inline-start: 40px;">
+
+                        <li class="active"><a href="#" style="cursor:pointer;height: 44px;">All</a></li>
+
+
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" style="padding-right: 30px;color:black;cursor:pointer;" title="Turn on / off the search function">Filter & search ...</a>
+                            <ul class="dropdown-menu filterbarfull filterbar" style="top: 41.1146px;left: -2.319px;">
+                                <li>
+                                    <form class="ui form">
+                                        <table style="margin:10px" ;cellpadding="10">
+                                            <tbody style="width:100%;height:100%" width="100%">
+                                                <tr>
+                                                    <td style="text-align:right">
+                                                        <label>Key word</label>
+                                                    </td>
+                                                    <td>
+                                                        <div class="col-sm-10"></div>
+                                                        <input class="form-control" type="text" name="keyword" ;border-style="groove" />
+                                                    </td>
+
+                                                </tr>
+                                                <tr>
+                                                    <td style="text-align:right">
+                                                        <label>Status</label>
+                                                    </td>
+                                                    <td>
+                                                        <div class="form-group"></div>
+                                                        <div class="col-sm-10"></div>
+                                                        <select class="form-control">
+                                                            <option>All</option>
+                                                            <option>Working</option>
+                                                        </select>
+                                                    </td>
+
+
+                                                </tr>
+
+
+                                                <tr>
+                                                    <div>
+                                                        <td style="text-align:center;padding-top: 10px;" ; colspan="2">
+                                                            <button type="button" class="timkiem">Search</button>
+                                                        </td>
+                                                    </div>
+
+                                                </tr>
+                                                <tr>
+
+                                                    <td colspan="2" style="text-align:center;padding-top: 17px;">
+                                                        <a href="#">Close</a>
+                                                    </td>
+
+                                                </tr>
+
+
+                                            </tbody>
+                                        </table>
 
                 </div>
-            </nav>
-        </div>
-    </header>
-    <div class="container" style="background-color: #eee;height: 106px;width: 100%;margin-top: -19px;">
 
-        <div style="margin-bottom: -11px;margin-top: -20px;">
-            <br />
-            <a class="abc tab-content" href="Project.html">
-                <span>
-                    <h2 style="cursor:pointer;">Project</h2>
-                </span>
-            </a>
-            <div>
+                </form><br />
+                <div style="display:flex" class="row">
+                    <div class="col-sm-3" style="border-right-style:inset">
+                        <div>
+                            <div>
+                                <span>Category</span>
+                            </div>
+                            <div> Create Category</div>
 
-            </div>
-            <ul class="nav nav-tabs" style="margin-right:-202px;padding-inline-start: 40px;">
+                            <div class="modal fade" id="taodanhmuc" role="dialog">
+                                <div class="modal-dialog">
 
-                <li class="active"><a href="#" style="cursor:pointer;height: 44px;">All</a></li>
-
-
-                <li class="dropdown">
-                    <a class="dropdown-toggle" data-toggle="dropdown" style="padding-right: 30px;color:black;cursor:pointer;" title="Turn on / off the search function">Filter & search ...</a>
-                    <ul class="dropdown-menu filterbarfull filterbar" style="top: 41.1146px;left: -2.319px;">
-                        <li>
-                            <form class="ui form">
-                                <table style="margin:10px" ;cellpadding="10">
-                                    <tbody style="width:100%;height:100%" width="100%">
-                                        <tr>
-                                            <td style="text-align:right">
-                                                <label>Key word</label>
-                                            </td>
-                                            <td>
-                                                <div class="col-sm-10"></div>
-                                                <input class="form-control" type="text" name="keyword" ;border-style="groove" />
-                                            </td>
-
-                                        </tr>
-                                        <tr>
-                                            <td style="text-align:right">
-                                                <label>Status</label>
-                                            </td>
-                                            <td>
-                                                <div class="form-group"></div>
-                                                <div class="col-sm-10"></div>
-                                                <select class="form-control">
-                                                    <option>All</option>
-                                                    <option>Working</option>
-                                                </select>
-                                            </td>
-
-
-                                        </tr>
-
-
-                                        <tr>
+                                    <!-- Modal content-->
+                                    <div class="modal-content">
+                                        <div style="margin: 20px;">
                                             <div>
-                                                <td style="text-align:center;padding-top: 10px;" ; colspan="2">
-                                                    <button type="button" class="timkiem">Search</button>
-                                                </td>
+
+                                                <h4 class="modal-title">says</h4>
                                             </div>
-
-                                        </tr>
-                                        <tr>
-
-                                            <td colspan="2" style="text-align:center;padding-top: 17px;">
-                                                <a href="#">Close</a>
-                                            </td>
-
-                                        </tr>
-
-
-                                    </tbody>
-                                </table>
-
-        </div>
-
-        </form><br />
-        <div style="display:flex" class="row">
-            <div class="col-sm-3" style="border-right-style:inset">
-                <div>
-                    <div>
-                        <span>Category</span>
-                    </div>
-
-                    <div>
-                        <a data-toggle="modal" data-target="#taodanhmuc" href="#">
-                            <span style="margin-left:20px ; float: right; margin-top: -15px;">
-                                Create Article
-                            </span>
-                        </a>
-                        <div class="modal fade" id="taodanhmuc" role="dialog">
-                            <div class="modal-dialog">
-
-                                <!-- Modal content-->
-                                <div class="modal-content">
-                                    <div style="margin: 20px;">
-                                        <div>
-
-                                            <h4 class="modal-title">says</h4>
+                                            <div>
+                                                <span style="font-size:20px">Create a Article</span>
+                                            </div>
+                                            <div>
+                                                <input class="form-control" type="text" />
+                                            </div>
                                         </div>
-                                        <div>
-                                            <span style="font-size:20px">Create a Article</span>
-                                        </div>
-                                        <div>
-                                            <input class="form-control" type="text" />
+                                        <div class="modal-footer">
+                                            <button type="button" ; style="border-radius:20px ;font-size:18px;height:40px;background-color:dodgerblue" class="btn btn-group" data-dismiss="modal">Ok</button>
+                                            <button type="button" ; style="border-radius:20px ;font-size:18px;height:40px" class="btn btn-group" data-dismiss="modal">CanCel</button>
                                         </div>
                                     </div>
-                                    <div class="modal-footer">
-                                        <button type="button" ; style="border-radius:20px ;font-size:18px;height:40px;background-color:dodgerblue" class="btn btn-group" data-dismiss="modal">Ok</button>
-                                        <button type="button" ; style="border-radius:20px ;font-size:18px;height:40px" class="btn btn-group" data-dismiss="modal">CanCel</button>
-                                    </div>
+
                                 </div>
 
                             </div>
 
-                            <div style="margin-top: 40px;">
-                                <label>Content</label>
-                                <textarea class="tinymce" style="display: block;"></textarea>
-                            </div>
-                            <div style="margin-top: 40px;">
-                                <label>Attached files</label>
-                                <div style="margin-top: 20px;">
-                                    <a style="text-decoration:none;text-align: center;background-color: #fff;display: flex;cursor: pointer;justify-content: center;align-items: center;margin: -5px;height: 123px;width: 123px;border: 2px dotted #d0d0d0;">
-                                        <i class="fa fa-cloud-upload" style="float:left;"></i>
-                                        <span style="margin-left:10px;">Upload the file</span>
-                                        <input type="file" style="opacity: 0; position: absolute;" />
-                                    </a>
+                            <div>
+                                <a data-toggle="modal" data-target="#taodanhmuc" href="#">
+                                    <span style="margin-left:20px ; float: right; margin-top: -15px;">
+                                        Create Article
+                                    </span>
+                                </a>
+                                <div class="modal fade" id="taodanhmuc" role="dialog">
+                                    <div class="modal-dialog">
+
+                                        <!-- Modal content-->
+                                        <div class="modal-content">
+                                            <div style="margin: 20px;">
+                                                <div>
+
+                                                    <h4 class="modal-title">says</h4>
+                                                </div>
+                                                <div>
+                                                    <span style="font-size:20px">Create a Article</span>
+                                                </div>
+                                                <div>
+                                                    <input class="form-control" type="text" />
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" ; style="border-radius:20px ;font-size:18px;height:40px;background-color:dodgerblue" class="btn btn-group" data-dismiss="modal">Ok</button>
+                                                <button type="button" ; style="border-radius:20px ;font-size:18px;height:40px" class="btn btn-group" data-dismiss="modal">CanCel</button>
+                                            </div>
+                                        </div>
+
+                                    </div>
 
                                 </div>
+                                <div class="modal fade" id="taodanhmuc" role="dialog">
+                                    <div class="modal-dialog">
 
+                                        <!-- Modal content-->
+                                        <div class="modal-content">
+                                            <div style="margin: 20px;">
+                                                <div>
+
+                                                    <h4 class="modal-title">says</h4>
+                                                </div>
+                                                <div>
+                                                    <span style="font-size:20px">Create a Article</span>
+                                                </div>
+                                                <div>
+                                                    <input class="form-control" type="text" />
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" ; style="border-radius:20px ;font-size:18px;height:40px;background-color:dodgerblue" class="btn btn-group" data-dismiss="modal">Ok</button>
+                                                <button type="button" ; style="border-radius:20px ;font-size:18px;height:40px" class="btn btn-group" data-dismiss="modal">CanCel</button>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                                <div class="modal fade" id="taodanhmuc" role="dialog">
+                                    <div class="modal-dialog">
+
+                                        <!-- Modal content-->
+                                        <div class="modal-content">
+                                            <div style="margin: 20px;">
+                                                <div>
+
+                                                    <h4 class="modal-title">says</h4>
+                                                </div>
+                                                <div>
+                                                    <span style="font-size:20px">Create a Article</span>
+                                                </div>
+                                                <div>
+                                                    <input class="form-control" type="text" />
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" ; style="border-radius:20px ;font-size:18px;height:40px;background-color:dodgerblue" class="btn btn-group" data-dismiss="modal">Ok</button>
+                                                <button type="button" ; style="border-radius:20px ;font-size:18px;height:40px" class="btn btn-group" data-dismiss="modal">CanCel</button>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                </div>
                             </div>
+
+
                         </div>
+
+
+
+
                     </div>
-
-
-
-                   
                 </div>
+                <div class="col-sm-9"></div>
             </div>
-            <div class="col-sm-9"></div>
-        </div>
 
-        <script>
-            function myFunction() {
-                var txt;
-                var person = prompt("Enter the folder name you want to create:");
-                if (person == null || person == "") {
-                    txt = "";
-                } else {
-                    txt = person;
+            <script>
+                function myFunction() {
+                    var txt;
+                    var person = prompt("Enter the folder name you want to create:");
+                    if (person == null || person == "") {
+                        txt = "";
+                    } else {
+                        txt = person;
+                    }
+                    document.getElementById("demo").innerHTML = txt;
                 }
-                document.getElementById("demo").innerHTML = txt;
-            }
 
-            function myFunction2() {
-                var txt;
-                var person = prompt("Enter the title of the article:");
-                if (person == null || person == "") {
-                    txt = "";
-                } else {
-                    txt = person;
+                function myFunction2() {
+                    var txt;
+                    var person = prompt("Enter the title of the article:");
+                    if (person == null || person == "") {
+                        txt = "";
+                    } else {
+                        txt = person;
+                    }
+                    document.getElementById("demo").innerHTML = txt;
                 }
-                document.getElementById("demo").innerHTML = txt;
-            }
-        </script>
-        <script>
-            var main = document.querySelector('main'),
-                tree = new VanillaTree(main, {
-                    contextmenu: [{
-                        label: 'Add',
-                        action: function (id) {
-                            var txt;
-                            var person = prompt("Enter the folder name you want to create:");
-                            if (person == null || person == "") {
-                                txt = "";
-                            } else {
-                                txt = person;
+            </script>
+            <script>
+                var main = document.querySelector('main'),
+                    tree = new VanillaTree(main, {
+                        contextmenu: [{
+                            label: 'Add',
+                            action: function (id) {
+                                var txt;
+                                var person = prompt("Enter the folder name you want to create:");
+                                if (person == null || person == "") {
+                                    txt = "";
+                                } else {
+                                    txt = person;
+                                }
+                                document.getElementById("demo").innerHTML = txt;
                             }
-                            document.getElementById("demo").innerHTML = txt;
-                        }
-                    }, {
-                        label: 'Create',
-                        action: function (id) {
-                            var txt;
-                            var person = prompt("Enter the title of the article:");
-                            if (person == null || person == "") {
-                                txt = "";
-                            } else {
-                                txt = person;
+                        }, {
+                            label: 'Create',
+                            action: function (id) {
+                                var txt;
+                                var person = prompt("Enter the title of the article:");
+                                if (person == null || person == "") {
+                                    txt = "";
+                                } else {
+                                    txt = person;
+                                }
+                                document.getElementById("demo").innerHTML = txt;
                             }
-                            document.getElementById("demo").innerHTML = txt;
-                        }
-                    },
-                    {
-                        label: 'Edit',
-                        action: function (id) {
-                            var txt;
-                            var person = prompt("Do you really want to delete?");
-                            if (person == null || person == "") {
-                                txt = "";
-                            } else {
-                                txt = person;
+                        },
+                        {
+                            label: 'Edit',
+                            action: function (id) {
+                                var txt;
+                                var person = prompt("Do you really want to delete?");
+                                if (person == null || person == "") {
+                                    txt = "";
+                                } else {
+                                    txt = person;
+                                }
+                                document.getElementById("demo").innerHTML = txt;
                             }
-                            document.getElementById("demo").innerHTML = txt;
-                        }
-                    },
-                    {
-                        label: 'Delete',
-                        action: function (id) {
-                            confirm("Do you really want to delete?");
-                        }
-                    }]
+                        },
+                        {
+                            label: 'Delete',
+                            action: function (id) {
+                                confirm("Do you really want to delete?");
+                            }
+                        }]
+                    });
+                tree.add({
+                    label: 'Label A',
+                    id: 'a',
+                    opened: true
                 });
-            tree.add({
-                label: 'Label A',
-                id: 'a',
-                opened: true
-            });
 
-            tree.add({
-                label: 'Label B',
-                id: 'b'
-            });
+                tree.add({
+                    label: 'Label B',
+                    id: 'b'
+                });
 
 
 
-            // add new nodes
-            tree.add(options);
+                // add new nodes
+                tree.add(options);
 
-            // move a node to parent
-            tree.move(id, parentId);
+                // move a node to parent
+                tree.move(id, parentId);
 
-            // remove a node
-            tree.remove(id);
+                // remove a node
+                tree.remove(id);
 
-            // open a node
-            tree.open(id);
+                // open a node
+                tree.open(id);
 
-            // close a node
-            tree.close(id);
+                // close a node
+                tree.close(id);
 
-            // toggle a node
-            tree.toggle(id);
+                // toggle a node
+                tree.toggle(id);
 
-            // select a node
-            tree.select(id);
-        </script>
+                // select a node
+                tree.select(id);
+            </script>
 
 </body>
 </html>
