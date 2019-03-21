@@ -336,6 +336,23 @@
             text-align: left;
             border-bottom: 1px solid #ddd;
         }
+        .lss {
+            color: black;
+        }
+
+            .lss:hover {
+                background-color: #eee;
+                cursor: pointer;
+            }
+
+        .hh {
+            color: black;
+        }
+
+            .hh:hover {
+                background-color: #eee;
+                cursor: pointer;
+            }
     </style>
 </head>
 <body class="hold-transition skin-blue sidebar-mini">
@@ -512,10 +529,10 @@
     <div class="container-fluid" style="background-color:#eee; margin-top: 5px;">
         <div>
             <input placeholder="Key work" type="text" />
-            <label style="margin-left:10px">Assign: </label>
-            <div class="dropdown" style="margin-top: 20px;">
+            <label class="ls" style="margin-left:20px">Assign: </label>
+            <div class="dropdown " style="margin-top: 20px;">
 
-                <div class="ls dropdown-toggle" data-toggle="dropdown" style="border: none;">
+                <div class=" dropdown-toggle lss" data-toggle="dropdown" style="border: none;">
                     <span>All</span>
                     <i class="fa fa-caret-down" style="float: right;"></i>
                 </div>
@@ -528,10 +545,10 @@
 
                 </ul>
             </div>
-            <label style="margin-left:10px">Priority:</label>
+            <label class="ls" style="margin-left:20px">Priority:</label>
             <div class="dropdown" style="margin-top: 20px;">
 
-                <div class="ls dropdown-toggle" data-toggle="dropdown" style="border: none;">
+                <div class=" dropdown-toggle lss" data-toggle="dropdown" style="border: none;">
                     <span>All</span>
                     <i class="fa fa-caret-down" style="float: right;"></i>
                 </div>
@@ -545,10 +562,10 @@
 
                 </ul>
             </div>
-            <label style="margin-left:10px">Type:</label>
+            <label class="ls" style="margin-left:20px">Type:</label>
             <div class="dropdown" style="margin-top: 20px;">
 
-                <div class="ls dropdown-toggle" data-toggle="dropdown" style="border: none;">
+                <div class="dropdown-toggle lss" data-toggle="dropdown" style="border: none;">
                     <span>All</span>
                     <i class="fa fa-caret-down" style="float: right;"></i>
                 </div>
@@ -567,10 +584,10 @@
                 </ul>
             </div>
 
-            <label style="margin-left:10px">Status:</label>
+            <label class="ls" style="margin-left:20px">Status:</label>
             <div class="dropdown" style="margin-top: 20px;">
 
-                <div class="ls dropdown-toggle" data-toggle="dropdown" style="border: none;">
+                <div class=" dropdown-toggle lss" data-toggle="dropdown" style="border: none;">
                     <span>All</span>
                     <i class="fa fa-caret-down" style="float: right;"></i>
                 </div>
@@ -589,7 +606,7 @@
                 </ul>
             </div>
 
-            <button type="button" style="border-radius:12px;background-color:#1678c2">Search</button>
+            <button type="button" class="btn btn-primary" style="border-radius: 16px;margin-left: 20px;">Search</button>
             <hr />
         </div>
         <table>
