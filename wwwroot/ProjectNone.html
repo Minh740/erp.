@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title></title>
+    <title>Project</title>
     <!-- Tell the browser to be responsive to screen width -->
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <!-- Bootstrap 3.3.7 -->
@@ -28,7 +28,7 @@
     <!-- Daterange picker -->
     <link rel="stylesheet" href="bower_components/bootstrap-daterangepicker/daterangepicker.css">
     <!-- bootstrap wysihtml5 - text editor -->
-    <link rel="stylesheet" href="plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css">
+    <link rel="stylesheet" href="/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -42,70 +42,37 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+
     <style>
+
+
         @media screen and (max-width:200px) {
         }
 
-        .skin-blue .wrapper {
-            background-color: white;
+        table {
+            border-collapse: collapse;
+            width: 100%;
         }
 
-        .main-header .navbar {
-            margin-bottom: 0px;
-            margin-left: 0px;
+        th, td {
+            padding: 8px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
         }
 
-        .navbar-inverse {
-            background-color: #3498db;
-            color: white;
-            border-color: #3498db;
+        tr:hover {
+            background-color: #f5f5f5;
         }
 
-        .container-fluid {
+        th, td {
+            padding: 8px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
         }
-
-        .navbar-inverse :hover {
-            background-color: #3498db;
-        }
-
-        .navbar-nav > li > .dropdown-menu {
-            margin-top: 5px;
-        }
-
-        .skin-blue .main-header .navbar .nav > li > a:hover {
-            background: rgba(255,255,255,0.15);
-            color: #f6f6f6;
-        }
-
-        .navbar-inverse .navbar-nav > li > a {
-            color: #f5f5f5;
-        }
-
-        .navbar-nav > li > .dropdown-menu {
-            margin-top: 0;
-            contai border-top-left-radius: 0;
-            border-top-right-radius: 0;
-            background: #2980b9;
-        }
-
-        .dropdown-menu > li > a {
-            display: block;
-            padding: 3px 20px;
-            clear: both;
-            font-weight: 400;
-            line-height: 1.42857143;
-            color: #f5f5f5;
-            white-space: nowrap;
-        }
-
-            .dropdown-menu > li > a:hover {
-                background-color: #3498db;
-                color: #f5f5f5;
-            }
-
 
         .dropbtn {
-            background-color: #38dbcc;
+            background-color: #3c8dbc;
             color: white;
             padding: 19px;
             font-size: 16px;
@@ -121,6 +88,28 @@
             position: relative;
             display: inline-block;
         }
+
+        .filterbarfull {
+            position: absolute;
+            width: 320px;
+            background: #f8f8f8;
+            top: 130px;
+            z-index: 1;
+            padding: 5px;
+            border: 3px solid #ddd;
+            box-shadow: 4px 4px 8px #ccc;
+            border-radius: 0 0 4px 4px;
+            border-top-width: 5px;
+            margin: -7px 0 0;
+        }
+
+            .filterbarfull tr td:first-child {
+                text-align: right;
+            }
+
+            .filterbarfull table {
+                font-size: smaller;
+            }
 
         .dropdown-content {
             display: none;
@@ -200,7 +189,7 @@
         }
 
         .abc {
-            color: #337ab7;
+            color: black;
         }
 
         .chuphinh {
@@ -235,71 +224,11 @@
                 background-color: #6764ed;
             }
 
-        .ls {
-            color: #777;
-        }
-
-            .ls:hover {
-                color: black;
-                cursor: pointer;
-            }
-
-        .maychamcong {
-            background-color: #F2711C;
-            color: white;
-            text-shadow: none;
-            background-image: none;
-            border-radius: 20px;
-            padding: 6px;
-        }
-
-            .maychamcong:hover {
-                cursor: pointer;
-            }
-
-        .nutchamcong {
-            background-color: #555;
-            color: white;
-            text-shadow: none;
-            background-image: none;
-            border-radius: 20px;
-            padding: 6px;
-            contai
-        }
-
-            .nutchamcong:hover {
-                background-color: black;
-                cursor: pointer;
-            }
-
-        .filterbar {
-            background: #eee;
-            padding: 10px 15px;
-            margin: 5px;
-            border: 1px solid #eee;
-        }
-
-        .filterbarfull {
+        .filter-project {
             position: absolute;
             width: 320px;
             background: #f8f8f8;
-            top: 130px;
-            z-index: 1;
-            padding: 5px;
-            border: 3px solid #ddd;
-            box-shadow: 4px 4px 8px #ccc;
-            border-radius: 0 0 4px 4px;
-            border-top-width: 5px;
-            margin: -7px 0 0;
         }
-
-            .filterbarfull tr td:first-child {
-                text-align: right;
-            }
-
-            .filterbarfull table {
-                font-size: smaller;
-            }
 
         .timkiem {
             background-color: #2185D0; /*#1678c2*/
@@ -314,88 +243,70 @@
             border-radius: 20px;
         }
 
-            .timkiem:hover {
-                background-color: #1678c2;
-            }
-
-        .topnav:hover {
-            background-color: #1377da !important;
+        .btn-createproject {
+            background-color: black;
+            color: white;
+            text-shadow: none;
+            background-image: none;
+            border-radius: 20px;
+            padding: 6px;
         }
 
-        .dropdown-toggle:hover {
-            background-color: #1377da;
-        }
-
-        table {
-            border-collapse: collapse;
-            width: 100%;
+        .skin-blue .wrapper {
             background-color: white;
         }
 
-        th, td {
-            padding: 8px;
-            text-align: left;
-            border-bottom: 1px solid #ddd;
-        }
-        .switch {
-            position: relative;
-            display: inline-block;
-            width: 60px;
-            height: 34px;
+        .main-header .navbar {
+            margin-bottom: 0px;
+            margin-left: 0px;
         }
 
-            .switch input {
-                opacity: 0;
-                width: 0;
-                height: 0;
-            }
-
-        .slider {
-            position: absolute;
-            cursor: pointer;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background-color: #ccc;
-            -webkit-transition: .4s;
-            transition: .4s;
+        .navbar-inverse {
+            background-color: #3498db;
+            color: white;
+            border-color: #3498db;
         }
 
-            .slider:before {
-                position: absolute;
-                content: "";
-                height: 26px;
-                width: 26px;
-                left: 4px;
-                bottom: 4px;
-                background-color: white;
-                -webkit-transition: .4s;
-                transition: .4s;
-            }
-
-        input:checked + .slider {
-            background-color: #2196F3;
+        .container-fluid {
         }
 
-        input:focus + .slider {
-            box-shadow: 0 0 1px #2196F3;
+        .navbar-inverse :hover {
+            background-color: #3498db;
         }
 
-        input:checked + .slider:before {
-            -webkit-transform: translateX(26px);
-            -ms-transform: translateX(26px);
-            transform: translateX(26px);
+        .navbar-nav > li > .dropdown-menu {
+            margin-top: 5px;
         }
 
-        /* Rounded sliders */
-        .slider.round {
-            border-radius: 34px;
+        .skin-blue .main-header .navbar .nav > li > a:hover {
+            background: rgba(255,255,255,0.15);
+            color: #f6f6f6;
         }
 
-            .slider.round:before {
-                border-radius: 50%;
-            }
+        .navbar-inverse .navbar-nav > li > a {
+            color: #f5f5f5;
+        }
+
+        .navbar-nav > li > .dropdown-menu {
+            margin-top: 0;
+            border-top-left-radius: 0;
+            border-top-right-radius: 0;
+            background: #2980b9;
+        }
+
+        .dropdown-menu > li > a {
+            display: block;
+            padding: 3px 20px;
+            clear: both;
+            font-weight: 400;
+            line-height: 1.42857143;
+            color: #f5f5f5;
+            white-space: nowrap;
+        }
+
+            .dropdown-menu > li > a:hover {
+                background-color: #3498db;
+                color: #f5f5f5;
             }
     </style>
 </head>
@@ -407,7 +318,7 @@
                     <ul class="nav navbar-nav">
                         <li class="dropdown">
                             <a class="logo-lg" data-toggle="dropdown" href="#">Basecrop </a>
-                            <ul class="dropdown-menu" style="border: none;">
+                            <ul class="dropdown-menu">
                                 <li><a href="Main.html"><i class="fa fa-home"></i> Dashboard</a></li>
                                 <li><a href="CompanyDocuments.html"><i class="fa fa-folder"></i> Company documents</a></li>
                                 <li><a href="InstallationAndConfiguration.html"><i class="fa fa-cog"></i> Installation & Configuration</a></li>
@@ -415,8 +326,8 @@
                             </ul>
                         </li>
                         <li class="dropdown">
-                            <a class="dropdown-toggle " data-toggle="dropdown" href="#">Timekeeping </a>
-                            <ul class="dropdown-menu" style="border: none;">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Timekeeping </a>
+                            <ul class="dropdown-menu">
                                 <li><a href="TimeKeeping.html"><i class="fa fa-plus-circle"></i> Timekeeping</a></li>
                                 <li><a href="KeepingHistory.html"><i class="fa fa-history"></i> Timekeeping history</a></li>
                                 <li><a href="calendar.html"><i class="fa fa-calendar"></i> Calendar</a></li>
@@ -425,22 +336,22 @@
                         </li>
                         <li class="dropdown">
                             <a class="dropdown-toggle" data-toggle="dropdown" href="#">Mailbox</a>
-                            <ul class="dropdown-menu" style="border: none;">
-                                <li><a href="MailBox.html"><i class="fa fa-envelope"></i> Inbox</a></li>
-                                <li><a href="SentMail.html"><i class="fa fa-arrow-left"></i> Sent</a></li>
-                                <li><a href="ComposeMail.html"><i class="fa fa-edit"></i> Compose a new message</a></li>
+                            <ul class="dropdown-menu">
+                                <li><a href="#"><i class="fa fa-envelope"></i> Inbox</a></li>
+                                <li><a href="#"><i class="fa fa-arrow-left"></i> Sent</a></li>
+                                <li><a href="#"><i class="fa fa-edit"></i> Compose a new message</a></li>
                             </ul>
                         </li>
                         <li class="dropdown">
                             <a class="dropdown-toggle" data-toggle="dropdown" href="#">Project</a>
-                            <ul class="dropdown-menu" style="border: none;">
+                            <ul class="dropdown-menu">
                                 <li><a href="ListProject.html"><i class="fa fa-briefcase"></i> List of projects</a></li>
                                 <li><a href="CreateProject.html"><i class="fa fa-plus-circle"></i> Create a new project</a></li>
                             </ul>
                         </li>
                         <li class="dropdown">
                             <a class="dropdown-toggle" data-toggle="dropdown" href="#">Blog</a>
-                            <ul class="dropdown-menu" style="border: none;">
+                            <ul class="dropdown-menu">
                                 <li><a href="CompanyBlog.html"><i class="fa fa-leanpub"></i> Company blog</a></li>
                                 <li><a href="ForManagerBlog.html"><i class="fa fa-list"></i> Blog management</a></li>
                                 <li><a href="AddNewBlogForManager.html"><i class="fa fa-edit"></i> Write a new blog</a></li>
@@ -448,14 +359,14 @@
                         </li>
                         <li class="dropdown">
                             <a class="dropdown-toggle" data-toggle="dropdown" href="#">Online Learning</a>
-                            <ul class="dropdown-menu" style="border: none;">
+                            <ul class="dropdown-menu">
                                 <li><a href="AllCourses.html"><i class="fa fa-leanpub"></i> All courses</a></li>
                                 <li><a href="MyCourse.html"><i class="fa fa-product-hunt"></i> My course</a></li>
                             </ul>
                         </li>
                         <li class="dropdown">
                             <a class="dropdown-toggle" data-toggle="dropdown" href="#">Employees</a>
-                            <ul class="dropdown-menu" style="border: none;">
+                            <ul class="dropdown-menu">
                                 <li><a href="employee.html"><i class="fa fa-address-card"></i> Employees</a></li>
                                 <li><a href="paycheck.html"><i class="fa fa-tag"></i> Paycheck</a></li>
                                 <li><a href="hrmleave.html"><i class="fa fa-bell-slash"></i> Please take leave</a></li>
@@ -503,7 +414,7 @@
             </nav>
         </div>
     </header>
-    <div class="container" style="background-color: #eee;height: 106px;width: 100%;margin-top: -20px;">
+    <div class="container" style="background-color: #eee;height: 106px;width: 100%;margin-top: -19px;">
 
         <div style="margin-bottom: -11px;margin-top: -20px;">
             <br />
@@ -512,168 +423,78 @@
                     <h2 style="cursor:pointer;">Project</h2>
                 </span>
             </a>
-
+            <div>
+                <button style="float:right;margin-top:-42px;font-size: 17px;color: white;background-color: black;border-radius: 17px;height:40px;    font-family: -webkit-body;">
+                    <a style="color:white" href="CreateProject.html"> <i class="fas fa-plus-circle"></i>Create New Project</a>
+                </button>
+            </div>
             <ul class="nav nav-tabs" style="margin-right:-202px;padding-inline-start: 40px;">
-                <li class="active"><a href="#" style="cursor:pointer;height: 44px;">Create New Project</a></li>
+                <i class="fas fa-angle-left" style="MARGIN-LEFT: 950px;"></i>  Page 1/1
+                <i class="fas fa-angle-right"></i>
+                <li class="active"><a href="#" style="cursor:pointer;height: 44px;">All</a></li>
+
+
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" style="padding-right: 30px;color:black;cursor:pointer;" title="Turn on / off the search function">Filter & search ...</a>
+                    <ul class="dropdown-menu filterbarfull filterbar" style="top: 41.1146px;left: -2.319px;">
+                        <li>
+                            <form class="ui form">
+                                <table style="margin:10px" ;cellpadding="10">
+                                    <tbody style="width:100%;height:100%" width="100%">
+                                        <tr>
+                                            <td style="text-align:right">
+                                                <label>Key word</label>
+                                            </td>
+                                            <td>
+                                                <div class="col-sm-10"></div>
+                                                <input class="form-control" type="text" name="keyword" ;border-style="groove" />
+                                            </td>
+
+                                        </tr>
+                                        <tr>
+                                            <td style="text-align:right">
+                                                <label>Status</label>
+                                            </td>
+                                            <td>
+                                                <div class="form-group"></div>
+                                                <div class="col-sm-10"></div>
+                                                <select class="form-control">
+                                                    <option>All</option>
+                                                    <option>Working</option>
+                                                </select>
+                                            </td>
+
+
+                                        </tr>
+
+
+                                        <tr>
+                                            <div>
+                                                <td style="text-align:center;padding-top: 10px;" ; colspan="2">
+                                                    <button type="button" class="timkiem">Search</button>
+                                                </td>
+                                            </div>
+
+                                        </tr>
+                                        <tr>
+
+                                            <td colspan="2" style="text-align:center;padding-top: 17px;">
+                                                <a href="#">Close</a>
+                                            </td>
+
+                                        </tr>
+
+
+                                    </tbody>
+                                </table>
         </div>
+        </form>
+        </li>
+
         </ul>
         <br>
     </div>
     </div>
 
-    <div class="row-content">
-
-        <div class="row">
-            <div class="col-sm-3">
-                <div style="margin-top:24px">
-                    <div><b>Overview</b></div>
-                    <div>Overview</div>
-                </div>
-
-            </div>
-
-
-            <div class="col-sm-4" style="width:40%">
-                <br />
-                <label>Name</label>
-
-                <div>
-                    <input style="width:95%" class="form-control" type="text" /> <br />
-                </div>
-
-
-
-
-                <label>Position</label>
-
-                <div>
-                    <input style="width: 188% ;  height: 60px" ; class="form-control" type="text" />
-                </div>
-
-                <div class="form-group row">
-
-                    <div class="col-xs-6" style="margin-top:22px;width:65%">
-
-                        <label for="ex1">Start Day</label>
-
-                        <div id="datepicker" class="input-group date" data-date-format="dd-mm-yyyy">
-                            <input class="form-control" readonly="" type="text"> <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
-                        </div>
-                    </div>
-
-
-
-                    <div class="col-xs-6" style=" width: 370px;    margin-top: -59px;    margin-left: 374px;">
-
-                        <label for="ex2">Finish Day</label>
-                        <div id="datepicker1" class="input-group date" data-date-format="dd-mm-yyyy">
-                            <input class="form-control" readonly="" type="text"> <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
-                        </div>
-                    </div>
-                    <div class="col-xs-6" style="margin-left: 745px; margin-top: -59px;">
-
-                        <label for="ex3">Status </label>
-                        <select style="width:90%" class="form-control" id="ex3" type="text">
-                            <option>New</option>
-                            <option>Working</option>
-                            <option>Finish</option>
-                            <option>Close</option>
-                        </select>
-                    </div>
-                </div>
-
-            </div>
-
-
-            <div class="col-sm-4" style="width: 500px; margin-left: 840px;margin-top: -280px;">
-                <br />
-                <label>Position</label>
-                <div>
-                    <input style="width:99%" class="form-control" type="text" />
-                </div>
-
-            </div>
-
-
-
-
-
-        </div>
-    </div>
-    <hr />
-    <div class="container1">
-        <div class="row">
-            <div class="col-sm-3">
-                <div style="margin-top:24px">
-                    <div><b>Overview</b></div>
-                    <div>Overview Detail</div>
-                </div>
-            </div>
-            <div class="col-sm-5">
-                <div>
-                    <label>Member</label>
-                    <select style="width:120%" class="form-control">
-                        <option>ádd</option>
-                        <option>ádd</option>
-                    </select>
-
-                </div>
-            </div>
-            <div class="col-sm-4">
-                <div style="display:flex;margin-top: 20px;">
-                    <label class="switch" style=" margin-left: 128px; margin-top: 7px;">
-                        <input type="checkbox" checked>
-                        <span class="slider round"></span>
-                    </label>
-                    <label style=" margin-left: 20px; margin-top: 12px">Can create jobs</label>
-                </div>
-
-
-
-
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-3">
-
-            </div>
-            <div class="col-sm-5">
-                <div>
-                    <label>Member</label>
-                    <select style="width:120%" class="form-control">
-                        <option>ádd</option>
-                    </select>
-
-                </div>
-            </div>
-            <div class="col-sm-4">
-                <div style="display:flex;margin-top: 20px;">
-                    <label class="switch" style=" margin-left: 128px; margin-top: 7px;">
-                        <input type="checkbox" checked="">
-                        <span class="slider round"></span>
-                    </label>
-                    <label style=" margin-left: 20px; margin-top: 12px">Can create jobs</label>
-                </div>
-
-
-
-
-            </div>
-
-        </div>
-        <div style="margin-left: 347px;font-size: 12px;">
-
-            You must have at least one project manager
-            project (or project leader) to be able to change the completion status of the job.
-        </div>
-        <hr />
-        <div style="    margin-left: 25px;font-size: 15px;">
-            * :
-            Obligatory
-        </div>
-    </div>
-    <div>
-        <a href="ListProject.html"><button type="button" style="border-radius:17px;border:none; height: 40px; float: right; margin-top: -19px; margin-right: 20px;background-color: #21BA45;color:white;">Create New Project</button></a>
-    </div>
 </body>
 </html>
