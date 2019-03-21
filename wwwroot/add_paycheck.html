@@ -38,6 +38,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <style>
         .skin-blue .wrapper {
             background-color: white;
@@ -212,6 +213,7 @@
         .colorChooser:hover {
             background: lightblue;
         }
+
         .segment {
             padding: 0 10px;
             border-width: 0;
@@ -220,12 +222,13 @@
             box-shadow: none;
             border: none;
         }
-        .segment:last-child {
-            top: 0px;
-            bottom: 0px;
-            border-radius: 0 0 .28571429rem .28571429rem;
-        }
-        
+
+            .segment:last-child {
+                top: 0px;
+                bottom: 0px;
+                border-radius: 0 0 .28571429rem .28571429rem;
+            }
+
         input {
             font-family: inherit !important;
             line-height: 1 !important;
@@ -233,12 +236,14 @@
             font: inherit;
             margin: 0;
         }
+
         .fields {
             display: flex;
             flex-direction: row;
             -webkit-box-direction: normal;
             -webkit-box-orient: horizontal;
         }
+
         .them {
             background-color: #3498db;
             border: none;
@@ -247,16 +252,18 @@
             font-size: 13px;
             cursor: pointer;
             border-radius: 20px;
-            margin-left:300px;
+            margin-left: 300px;
         }
 
             .them:hover {
                 background-color: #2980b9;
                 color: white;
             }
+
         .form-control {
-            width:50%;
+            width: 50%;
         }
+
         .title:hover {
             color: #3498db;
         }
@@ -416,7 +423,7 @@
                             </label>
                             <select class="form-control">
                                 <option>-----</option>
-                                <option>
+                                <option onclick="myFunction()">
                                     Pay once
                                 </option>
                                 <option>
@@ -474,6 +481,59 @@
                 </div>
             </form>
         </div>
+        <div class="w3-container" id="myDIV" style="display: none">
+            <table class="w3-table-all">
+                <thead>
+                    <tr class="w3-light-grey">
+                        <th>Criteria</th>
+                        <th>Employees</th>
+                        <th></th>
+                        <th>Note</th>
+                        <th>Attached file (3 file limit)</th>
+                        <th>Point</th>
+                    </tr>
+                </thead>
+                <tr>
+                    <td>1. sas</td>
+                    <td>
+                        <select style="width:200px;">
+                            <option value="" disabled selected>-----</option>
+                            <option value="1"></option>
+                        </select>
+                    </td>
+                    <td>
+                        <div style="width: 80px">
+                            <a style="text-decoration:none; color:#3498db; font-size: 12px;">All employee</a>
+                            <br />
+                            <a style="text-decoration:none; color:#3498db; font-size: 12px;">Uncheck all</a>
+                        </div>
+                    </td>
+                    <td>
+                        <input type="text" style="width:200px;" name="">
+                    </td>
+                    <td>
+                        <div class="box">
+                            <input type="file" name="file-2[]" id="file-2" class="inputfile inputfile-2" data-multiple-caption="{count} files selected" multiple="">
+                            <label for="file-2"><i class="fa fa-paperclip"></i><span>File attached...</span></label>
+                        </div>
+                    </td>
+                    <td>
+                        <a href="#"><label style="font-size:12px; background-color: #2185D0;border-color: #2185D0;color: #FFF;padding: 7px 10px;">10</label></a>
+                    </td>
+                </tr>
+            </table>
+        </div>
     </div>
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myDIV");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+    </script>
 </body>
 </html>
