@@ -384,6 +384,44 @@
             width: 85%;
             font-size:20px;
         }
+
+        .inputfile {
+            width: 0.1px;
+            height: 0.1px;
+            opacity: 0;
+            overflow: hidden;
+            position: absolute;
+            z-index: -1;
+        }
+
+            .inputfile:focus + label,
+            .inputfile.has-focus + label {
+                outline: 1px dotted #000;
+                outline: -webkit-focus-ring-color auto 5px;
+            }
+
+            .inputfile + label i,
+            .inputfile + label svg {
+                width: 1em;
+                height: 1em;
+                vertical-align: middle;
+                fill: currentColor;
+                margin-top: -0.25em;
+                margin-right: 0.25em;
+            }
+
+
+            .inputfile:focus + label,
+            .inputfile.has-focus + label,
+            .inputfile + label:hover {
+                color: #FF5722;
+            }
+
+        .box {
+            border-top: none;
+            box-shadow: none;
+            font-size: 10px;
+        }
     </style>
 </head>
 
@@ -783,7 +821,7 @@
                         </div>
                         <div class="tabright">
                             <input type="text" style="border: 1px solid #c0bdbc; border-radius:3px;width: 65%;" value="0" />
-                            <label  style="border: 1px solid #b6b5b5; margin-left:-9px;padding: 1px 6px;">kg</label>
+                            <label style="border: 1px solid #b6b5b5; margin-left:-9px;padding: 1px 6px;">kg</label>
                         </div>
                     </div>
                     <div style="display:flex;margin-bottom: 10px;">
@@ -792,7 +830,7 @@
                         </div>
                         <div class="tabright">
                             <input type="text" style="border: 1px solid #c0bdbc; border-radius:3px;width: 65%;" value="0" />
-                            <label  style="border: 1px solid #b6b5b5; margin-left:-9px;padding: 1px 3px;">cm</label>
+                            <label style="border: 1px solid #b6b5b5; margin-left:-9px;padding: 1px 3px;">cm</label>
                         </div>
                     </div>
                     <div style="display:flex;margin-bottom: 10px;">
@@ -905,7 +943,7 @@
                     </tr>
                     <tr>
                         <td>17/04/2019</td>
-                        <td style="color: #1377da;"><a style="text-decoration:none">d</a></td>
+                        <td class="cog" data-toggle="modal" data-target="#myModal4" style="color: #1377da;"><a style="text-decoration:none">d</a></td>
                         <td>Main office</td>
                         <td>Board of directors</td>
                         <td>assistant</td>
@@ -913,7 +951,7 @@
                         <td>Employees</td>
                         <td></td>
                         <td>
-                            <span>
+                            <span class="cog" data-toggle="modal" data-target="#myModal4">
                                 <i class="fa fa-pencil"></i>
                             </span>
 
@@ -921,7 +959,7 @@
                         <td><i class="fa fa-trash-o"></i></td>
                     </tr>
                 </table>
-                <div style="padding-top:20px">
+                <div class="cog" data-toggle="modal" data-target="#myModal5" style="padding-top:20px">
                     <button class="w3-button w3-black w3-round-xxlarge">
                         <i class="fa fa-plus" title="Add a new account"></i>
                         <span>Add a new account</span>
@@ -946,7 +984,7 @@
                     </tr>
                 </table>
                 <div style="padding-top:20px">
-                    <a class="w3-btn w3-white w3-border w3-border-blue w3-round-large" style="text-decoration:none;" href="#">Add more</a>
+                    <a class="w3-btn w3-white w3-border w3-border-blue w3-round-large" style="text-decoration:none;" href="TimeAttendance.html">Add more</a>
                 </div>
             </div>
 
@@ -1248,7 +1286,7 @@
                             <select class="form-control" id="sel">
                                 <option>New graduate / Internship</option>
                                 <option>Employees</option>
-                                <option>\Team Leader / Supervisor deputy</option>
+                                <option>Team Leader / Supervisor deputy</option>
                                 <option>Shop management assistant</option>
                             </select>
                         </div>
@@ -1263,8 +1301,11 @@
 
                     <div class="w3-cell-row">
                         <div class="col-sm-12">
-                            <label>Note</label>
-                            <input class="form-control" type="file" value="">
+                            <label>File</label>
+                            <div class="box">
+                                <input type="file" name="file-2[]" id="file-2" class="inputfile inputfile-2" data-multiple-caption="{count} files selected" multiple="">
+                                <label for="file-2"><i class="fa fa-paperclip"></i><span>File attached...</span></label>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -1442,7 +1483,7 @@
                             <select class="form-control" id="sel">
                                 <option>New graduate / Internship</option>
                                 <option>Employees</option>
-                                <option>\Team Leader / Supervisor deputy</option>
+                                <option>Team Leader / Supervisor deputy</option>
                                 <option>Shop management assistant</option>
                             </select>
                         </div>
@@ -1457,8 +1498,11 @@
 
                     <div class="w3-cell-row">
                         <div class="col-sm-12">
-                            <label>Note</label>
-                            <input class="form-control" type="file" value="">
+                            <label>File</label>
+                            <div class="box">
+                                <input type="file" name="file-2[]" id="file-2" class="inputfile inputfile-2" data-multiple-caption="{count} files selected" multiple="">
+                                <label for="file-2"><i class="fa fa-paperclip"></i><span>File attached...</span></label>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -1467,10 +1511,207 @@
                     <a class="btn bg-teal-active" style="margin-left:10px; text-decoration:none;">Add new</a>
                 </div>
             </div>
-
-
         </div>
     </div>
+
+    <div class="modal fade" id="myModal4" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" style="color:black;"><b>Update the contract</b></h4>
+                </div>
+                <div class="modal-body">
+                    <div class="w3-cell-row">
+                        <div class="col-sm-12">
+                            <label>Title</label>
+                            <input class="form-control" type="text" value="d">
+                        </div>
+                    </div>
+
+                    <div class="w3-cell-row">
+                        <div class="col-sm-12">
+                            <label>Move new position</label>
+                            <input class="form-control" type="text" value="assistant">
+                        </div>
+                    </div>
+
+                    <div class="w3-cell-row">
+                        <div class="col-sm-12">
+                            <label>Move the new office</label>
+                            <select class="form-control" id="sel">
+                                <option>Main office</option>
+                                <option></option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="w3-cell-row">
+                        <div class="col-sm-12">
+                            <label>Change the type of new job</label>
+                            <select class="form-control" id="sel">
+                                <option>>> Board of directors</option>
+                                <option></option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="w3-cell-row">
+                        <div class="col-sm-12">
+                            <label>Transfer new departments</label>
+                            <select class="form-control" id="sel">
+                                <option>Official staff</option>
+                                <option>Part-time</option>
+                                <option>Probation</option>
+                                <option>Extra work</option>
+                                <option>Part-time employee</option>
+                                <option>Project</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="w3-cell-row">
+                        <div class="col-sm-12">
+                            <label>Move new rank</label>
+                            <select class="form-control" id="sel">
+                                <option>New graduate / Internship</option>
+                                <option>Employees</option>
+                                <option>Team Leader / Supervisor</option>
+                                <option>Deputy</option>
+                                <option>Shop management assistant</option>
+                                <option>Manager</option>
+                                <option>Store manager</option>
+                                <option>Vice president</option>
+                                <option>Manager</option>
+                                <option>Managing director</option>
+                                <option>Vice president</option>
+                                <option>Chairman</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="w3-cell-row">
+                        <div class="col-sm-12">
+                            <label>Note</label>
+                            <input class="form-control" type="text" value="">
+                        </div>
+                    </div>
+
+                    <div class="w3-cell-row">
+                        <div class="col-sm-12">
+                            <label>File</label>
+                            <div class="box">
+                                <input type="file" name="file-2[]" id="file-2" class="inputfile inputfile-2" data-multiple-caption="{count} files selected" multiple="">
+                                <label for="file-2"><i class="fa fa-paperclip"></i><span>File attached...</span></label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <a class="btn btn-default" data-dismiss="modal">Close</a>
+                    <a class="btn bg-teal-active" style="margin-left:10px; text-decoration:none;">Save</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="myModal5" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" style="color:black;"><b>Update the contract</b></h4>
+                </div>
+                <div class="modal-body">
+                    <div class="w3-cell-row">
+                        <div class="col-sm-12">
+                            <label>Title</label>
+                            <input class="form-control" type="text" value="">
+                        </div>
+                    </div>
+
+                    <div class="w3-cell-row">
+                        <div class="col-sm-12">
+                            <label>Move new position</label>
+                            <input class="form-control" type="text" value="">
+                        </div>
+                    </div>
+
+                    <div class="w3-cell-row">
+                        <div class="col-sm-12">
+                            <label>Move the new office</label>
+                            <select class="form-control" id="sel">
+                                <option>Main office</option>
+                                <option></option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="w3-cell-row">
+                        <div class="col-sm-12">
+                            <label>Change the type of new job</label>
+                            <select class="form-control" id="sel">
+                                <option>>> Board of directors</option>
+                                <option></option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="w3-cell-row">
+                        <div class="col-sm-12">
+                            <label>Transfer new departments</label>
+                            <select class="form-control" id="sel">
+                                <option>Official staff</option>
+                                <option>Part-time</option>
+                                <option>Probation</option>
+                                <option>Extra work</option>
+                                <option>Part-time employee</option>
+                                <option>Project</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="w3-cell-row">
+                        <div class="col-sm-12">
+                            <label>Move new rank</label>
+                            <select class="form-control" id="sel">
+                                <option>New graduate / Internship</option>
+                                <option>Employees</option>
+                                <option>Team Leader / Supervisor</option>
+                                <option>Deputy</option>
+                                <option>Shop management assistant</option>
+                                <option>Manager</option>
+                                <option>Store manager</option>
+                                <option>Vice president</option>
+                                <option>Manager</option>
+                                <option>Managing director</option>
+                                <option>Vice president</option>
+                                <option>Chairman</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="w3-cell-row">
+                        <div class="col-sm-12">
+                            <label>Note</label>
+                            <input class="form-control" type="text" value="">
+                        </div>
+                    </div>
+
+                    <div class="w3-cell-row">
+                        <div class="col-sm-12">
+                            <label>File</label>
+                            <div class="box">
+                                <input type="file" name="file-2[]" id="file-2" class="inputfile inputfile-2" data-multiple-caption="{count} files selected" multiple="">
+                                <label for="file-2"><i class="fa fa-paperclip"></i><span>File attached...</span></label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <a class="btn btn-default" data-dismiss="modal">Close</a>
+                    <a class="btn bg-teal-active" style="margin-left:10px; text-decoration:none;">Add new</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <script>
         function openCity(evt, cityName) {
             var i, x, tablinks;
@@ -1499,6 +1740,34 @@
             document.getElementById(cityName).style.display = "block";
             evt.currentTarget.className += " active";
         }
+
+
+        'use strict';
+
+        ; (function (document) {
+            var inputs = document.querySelectorAll('.inputfile');
+            Array.prototype.forEach.call(inputs, function (input) {
+                var label = input.nextElementSibling,
+                    labelVal = label.innerHTML;
+
+                input.addEventListener('change', function (e) {
+                    var fileName = '';
+                    if (this.files && this.files.length > 1)
+                        fileName = (this.getAttribute('data-multiple-caption') || '').replace('{count}', this.files.length);
+                    else
+                        fileName = e.target.value.split('\\').pop();
+
+                    if (fileName)
+                        label.querySelector('span').innerHTML = fileName;
+                    else
+                        label.innerHTML = labelVal;
+                });
+
+                // Firefox bug fix
+                input.addEventListener('focus', function () { input.classList.add('has-focus'); });
+                input.addEventListener('blur', function () { input.classList.remove('has-focus'); });
+            });
+        }(document, window, 0));
     </script>
 </body>
 </html>
