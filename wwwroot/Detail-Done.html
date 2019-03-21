@@ -345,6 +345,49 @@
                 background-color: #eee;
                 cursor: pointer;
             }
+        table > thead ul > li {
+            display: table-cell;
+            background: url('img/pipelinedealstagearrow.png') 100% 0 no-repeat,linear-gradient(#fff,#f3f5f6);
+            background-repeat: no-repeat;
+            background-position: center right;
+            border-left: 1px #c2c8cd solid;
+            vertical-align: middle;
+            padding: 6px 45px 6px 12px;
+            position: relative;
+            min-width: 223px;
+            text-transform: uppercase;
+        }
+        .stage
+        {
+
+        }
+        table .stage-list {
+            height: 100%;
+            overflow-x: hidden;
+            overflow-y: scroll;
+            width: 100%;
+        }
+        table .stage-list-table {
+            height: 100%;
+            display: table;
+            table-layout: fixed;
+            width: 100%;
+        }
+            table .stage-list-table > .stage:first-child {
+                border-left-color: transparent;
+            }
+        .pipelinedealstagetable .stage-list-table > .stage {
+            display: table-cell;
+            border-left: 1px solid #e0e4e7;
+            text-align: left;
+            overflow: hidden;
+            background-color: transparent;
+            transition: background-color 50ms ease-in-out;
+            position: relative;
+            vertical-align: top;
+            padding: 0;
+            margin: 0;
+        }
     </style>
 </head>
 <body class="hold-transition skin-blue sidebar-mini">
@@ -485,22 +528,9 @@
         </ul>
         <div class="container-fluid" style="margin-top: -34px;margin-left: 791px;">
             <div class="container" style="float:left;margin-left:137px">
-
-                <div class="dropdown">
-
-                    <a class="ls dropdown-toggle" title="Dành cho quản lý" style="margin-left: -10px;background-color: #eee;border-color: #eee;" data-toggle="dropdown"><i class="fas fa-columns"></i>Kanban</a>
-
-                    <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
-                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><i class="fa fa-calendar"></i>Schedule work schedule</a></li>
-                        <li role="presentation"><a role="menuitem" tabindex="-1" href="SwitchShift.html"><i class="fa fa-exchange"></i>Switch shift</a></li>
-                        <li role="presentation"><a role="menuitem" tabindex="-1" href="HourlyReport.html"><i class="fa fa-bar-chart-o"></i>Report</a></li>
-                        <li role="presentation"><a role="menuitem" tabindex="-1" href="ExportExcel.html"><i class="fa fa-download"></i>Export excel</a></li>
-                        <li role="presentation"><a role="menuitem" tabindex="-1" href="PublicReview.html"><i class="fa fa-check-circle"></i>Browse public</a></li>
-                    </ul>
-                </div>
-
-                <a class="ls" style="margin-left: 15px; background-color: #eee;border-color: #eee;" href="Vision.html"><i class="fas fa-folder-open"></i> Vision</a>
-                <a style="margin-left: 24px;background-color: #eee;border-color: #eee;color:#777"><i class="fa fa-edit"></i> Kiwi</a>
+                <a href="Detail-None.html" class="ls" title="Switch to Kanban display (column)" style="margin-left: -10px;background-color: #eee;border-color: #eee;"><i class="fas fa-list"></i> Kanban</a>
+                <a class="ls"  title="Vision" style="margin-left: 15px; background-color: #eee;border-color: #eee;" href="Vision.html"><i class="fas fa-folder-open"></i> Vision</a>
+                <a class="ls" title="Wiki - Document" style="margin-left: 24px;background-color: #eee;border-color: #eee;color:#777"><i class="fa fa-edit"></i> Wiki</a>
                 <a data-toggle="modal" data-target="#myModal" title="Add Work" style=" color: white; margin-left: 15px;background-color: black;border-radius:15px;width: 519px;height: 100px;padding:10px;margin-left:70px"><i class="fa fa-plus-circle"></i> Add Work</a>
             </div>
             <div class="container" style="display: inline-flex;padding-left: 320px;    margin-top: 40px;">
@@ -629,22 +659,32 @@
         <table class="table" style="overflow: hidden;border-top: 1px solid rgb(208, 208, 208);height: 521px;">
             <thead>
                 <tr>
-                    <th style="color:#e798ba;">Wait for processing (0)</th>
-                    <th style="color:#3498db;">Delivered (0)</th>
-                    <th style="color:#2980b9;">Solving (0)</th>
-                    <th style="color:#ac0;">Need to be approved (0)</th>
-                    <th style="color:#8e44ad;">Browsing (0)</th>
-                    <th style="color:#CC4C9A;">Complete but error (0)</th>
+                  <th style="background-color: #f3f5f6;">
+                        <ul style="margin-left: -49px;margin-top: -8px;height: 14px;">
+                            <li style="color:#e798ba;">Wait for processing (0)</li>
+                            <li style="color:#3498db;">Delivered (0)</li>
+                            <li style="color:#2980b9;">Solving (0)</li>
+                            <li style="color:#ac0;">Need to be approved (0)</li>
+                            <li style="color:#8e44ad;">Browsing (0)</li>
+                            <li style="color:#CC4C9A;">Complete but error (0)</li>
+                        </ul>
+                    </th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td>
+                        <div class="stage-list" style="margin-top: -10px;">
+                            <div class="stage-list-table" style="display: flex;background-color: ghostwhite;">
+                                <div class="stage" style="width: 215px;height: 100%;border-right: 1px solid #e0e4e7;"></div>
+                                <div class="stage" style="width: 223px;height: 100%;border-right: 1px solid #e0e4e7;"></div>
+                                <div class="stage" style="width: 223px;height: 100%;border-right: 1px solid #e0e4e7;"></div>
+                                <div class="stage" style="width: 223px;height: 100%;border-right: 1px solid #e0e4e7;"></div>
+                                <div class="stage" style="width: 223px;height: 100%;border-right: 1px solid #e0e4e7;"></div>
+                                <div class="stage"></div>
+                            </div>
+                        </div>
+                    </td>
                 </tr>
             </tbody>
         </table>
