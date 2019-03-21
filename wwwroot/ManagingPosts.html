@@ -2,9 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Project</title>
+
     <!-- Tell the browser to be responsive to screen width -->
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <!-- Bootstrap 3.3.7 -->
@@ -44,7 +42,39 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 
 
+    <link href="css/file-explore.css" rel="stylesheet">
+    <script src="//code.jquery.com/jquery.min.js"></script>
+    <script src="js/file-explore.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="dist/vanillatree.css" rel="stylesheet" />
+    <script src="dist/vanillatree.js"></script>
+    <script src="plugins/tinymce/tinymce.min.js"></script>
+    <link href="/cp/alertify/css/alertify.min.css" rel="stylesheet" />
+    <link href="/cp/alertify/css/themes/default.min.css" rel="stylesheet" />
+    <script src="/cp/alertify/alertify.min.js"></script>
+    <!--tinyamce-->
+    <script src="plugin/tinymce/tinymce.min.js"></script>
+    <script src="plugins/alertify/alertify.js"></script>
+    <script src="plugins/alertify/alertify.min.js"></script>
+    <link href="plugins/alertify/css/themes/default.min.css" rel="stylesheet" />
+    <link href="plugins/alertify/css/alertify.min.css" rel="stylesheet" />
+    <script src="plugins/tinymce/tinymce.min.js"></script>
+    <script>
+        tinymce.init({
+            selector: "textarea.tinymce",
+            theme: "modern",
+            height: 300,
+            plugins: [
+                "advlist autolink link image lists charmap print preview hr anchor pagebreak spellchecker", "searchreplace wordcount visualblocks visualchars code fullscreen insertdatetime media nonbreaking", "save table contextmenu directionality emoticons template paste textcolor"
+            ],
+            toolbar: "code insertfile undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image | print preview media fullpage | forecolor backcolor emoticons",
+        });
+    </script>
     <style>
+        .skin-blue .wrapper {
+            background-color: white;
+        }
+
 
 
         @media screen and (max-width:200px) {
@@ -311,105 +341,118 @@
     </style>
 </head>
 <body class="hold-transition skin-blue sidebar-mini">
-    <header class="main-header">
-        <div class="topnav">
-            <nav class="navbar navbar-inverse">
-                <div class="container-fluid">
-                    <ul class="nav navbar-nav">
-                        <li class="dropdown">
-                            <a class="logo-lg" data-toggle="dropdown" href="#">Basecrop </a>
-                            <ul class="dropdown-menu">
-                                <li><a href="Main.html"><i class="fa fa-home"></i> Dashboard</a></li>
-                                <li><a href="CompanyDocuments.html"><i class="fa fa-folder"></i> Company documents</a></li>
-                                <li><a href="InstallationAndConfiguration.html"><i class="fa fa-cog"></i> Installation & Configuration</a></li>
-                                <li><a href="ContactAndHelp.html"><i class="fa fa-question-circle"></i> Contact & Help</a></li>
-                            </ul>
-                        </li>
-                        <li class="dropdown">
-                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Timekeeping </a>
-                            <ul class="dropdown-menu">
-                                <li><a href="TimeKeeping.html"><i class="fa fa-plus-circle"></i> Timekeeping</a></li>
-                                <li><a href="KeepingHistory.html"><i class="fa fa-history"></i> Timekeeping history</a></li>
-                                <li><a href="calendar.html"><i class="fa fa-calendar"></i> Calendar</a></li>
-                                <li><a href="HourlyReport.html"><i class="fa fa-bar-chart"></i> Hourly report</a></li>
-                            </ul>
-                        </li>
-                        <li class="dropdown">
-                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Mailbox</a>
-                            <ul class="dropdown-menu">
-                                <li><a href="MailBox.html"><i class="fa fa-envelope"></i> Inbox</a></li>
-                                <li><a href="SentMail.html"><i class="fa fa-arrow-left"></i> Sent</a></li>
-                                <li><a href="ComposeMail.html"><i class="fa fa-edit"></i> Compose a new message</a></li>
-                            </ul>
-                        </li>
-                        <li class="dropdown">
-                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Project</a>
-                            <ul class="dropdown-menu" style="border: none;">
-                                <li><a href="ProjectNone.html"><i class="fa fa-briefcase"></i> List of projects</a></li>
-                                <li><a href="CreateProject.html"><i class="fa fa-plus-circle"></i> Create a new project</a></li>
-                            </ul>
-                        </li>
-                        <li class="dropdown">
-                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Blog</a>
-                            <ul class="dropdown-menu">
-                                <li><a href="CompanyBlog.html"><i class="fa fa-leanpub"></i> Company blog</a></li>
-                                <li><a href="ForManagerBlog.html"><i class="fa fa-list"></i> Blog management</a></li>
-                                <li><a href="AddNewBlogForManager.html"><i class="fa fa-edit"></i> Write a new blog</a></li>
-                            </ul>
-                        </li>
-                        <li class="dropdown">
-                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Online Learning</a>
-                            <ul class="dropdown-menu">
-                                <li><a href="AllCourses.html"><i class="fa fa-leanpub"></i> All courses</a></li>
-                                <li><a href="MyCourse.html"><i class="fa fa-product-hunt"></i> My course</a></li>
-                            </ul>
-                        </li>
-                        <li class="dropdown">
-                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Employees</a>
-                            <ul class="dropdown-menu">
-                                <li><a href="employee.html"><i class="fa fa-address-card"></i> Employees</a></li>
-                                <li><a href="paycheck.html"><i class="fa fa-tag"></i> Paycheck</a></li>
-                                <li><a href="hrmleave.html"><i class="fa fa-bell-slash"></i> Please take leave</a></li>
-                                <li><a href="employeepoint.html"><i class="fa fa-star"></i> Employee grading</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                    <ul class="nav navbar-nav navbar-right">
-                        <li class="dropdown">
-                            <a class=" dropdown-toggle" data-toggle="dropdown"><i class="fa fa-bell"></i></a>
-                            <ul class="dropdown-menu" id="123" style="color:black;height:340px; width:320px; background:white;">
-                                <li class="hienthi">
-                                    <div class="thongbao">
-                                        <h3 class="chu" style="margin: 10px 25px 0px -15px; font-size:15px; background-color:white;">
-                                            <span style="background-color:white;">News</span>
-                                            <a class="hienthi" style="margin-left:23px; margin-right:-20px; text-decoration: none; background-color:white;color: #007eff;">Setting</a>
-                                            <span class="hienthi" style="margin-right: -13px;font-size: 5px;margin-top: 7px;"><i class="fa fa-square"></i></span>
-                                            <a class="hienthi" style="text-decoration: none; background-color:white;color: #007eff;">Mark all read</a>
-                                        </h3>
-                                    </div>
-                                    <ul style="margin-left:-19%;">
-                                        <li class="divider"></li>
-                                    </ul>
-                                    <ul class="mau" style="height:235px; overflow:hidden; list-style-type:none;"></ul>
-                                    <ul style="margin-left:-19%;">
-                                        <li class="divider"></li>
-                                    </ul>
-                                    <a href="#" style="margin-left:80px; color:#3c8dbc; text-decoration:underline; background-color:white; ">See all</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="dropdown">
-                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                                User Name
-                                <span class="caret"></span>
-                            </a>
-                            <ul class="dropdown-menu" id="abc">
-                                <li><a href="#">Edit information</a></li>
-                                <li class="divider"></li>
-                                <li><a href="#">Exit</a></li>
-                            </ul>
-                        </li>
-                    </ul>
+
+    <div class="wrapper">
+        <header class="main-header">
+            <div class="topnav">
+                <nav class="navbar navbar-inverse">
+                    <div class="container-fluid">
+                        <ul class="nav navbar-nav">
+                            <li class="dropdown">
+                                <a class="logo-lg" data-toggle="dropdown" href="#">Basecrop </a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="Main.html"><i class="fa fa-home"></i> Dashboard</a></li>
+                                    <li><a href="CompanyDocuments.html"><i class="fa fa-folder"></i> Company documents</a></li>
+                                    <li><a href="InstallationAndConfiguration.html"><i class="fa fa-cog"></i> Installation & Configuration</a></li>
+                                    <li><a href="ContactAndHelp.html"><i class="fa fa-question-circle"></i> Contact & Help</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a class="dropdown-toggle" data-toggle="dropdown" href="#">Timekeeping </a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="doitruso.html"><i class="fa fa-plus-circle"></i> Timekeeping</a></li>
+                                    <li><a href="KeepingHistory.html"><i class="fa fa-history"></i> Timekeeping history</a></li>
+                                    <li><a href="calendar.html"><i class="fa fa-calendar"></i> Calendar</a></li>
+                                    <li><a href="HourlyReport.html"><i class="fa fa-bar-chart"></i> Hourly report</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a class="dropdown-toggle" data-toggle="dropdown" href="#">Mailbox</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="MailBox.html"><i class="fa fa-envelope"></i> Inbox</a></li>
+                                    <li><a href="SentMail.html"><i class="fa fa-arrow-left"></i> Sent</a></li>
+                                    <li><a href="ComposeMail.html"><i class="fa fa-edit"></i> Compose a new message</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a class="dropdown-toggle" data-toggle="dropdown" href="#">Project</a>
+                                <ul class="dropdown-menu" style="border: none;">
+                                    <li><a href="ProjectNone.html"><i class="fa fa-briefcase"></i> List of projects</a></li>
+                                    <li><a href="CreateProject.html"><i class="fa fa-plus-circle"></i> Create a new project</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a class="dropdown-toggle" data-toggle="dropdown" href="#">Blog</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="CompanyBlog.html"><i class="fa fa-leanpub"></i> Company blog</a></li>
+                                    <li><a href="ForManagerBlog.html"><i class="fa fa-list"></i> Blog management</a></li>
+                                    <li><a href="AddNewBlogForManager.html"><i class="fa fa-edit"></i> Write a new blog</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a class="dropdown-toggle" data-toggle="dropdown" href="#">Online Learning</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="AllCourses.html"><i class="fa fa-leanpub"></i> All courses</a></li>
+                                    <li><a href="MyCourse.html"><i class="fa fa-product-hunt"></i> My course</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a class="dropdown-toggle" data-toggle="dropdown" href="#">Employees</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="employee.html"><i class="fa fa-address-card"></i> Employees</a></li>
+                                    <li><a href="paycheck.html"><i class="fa fa-tag"></i> Paycheck</a></li>
+                                    <li><a href="hrmleave.html"><i class="fa fa-bell-slash"></i> Please take leave</a></li>
+                                    <li><a href="employeepoint.html"><i class="fa fa-star"></i> Employee grading</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li class="dropdown">
+                                <a class=" dropdown-toggle" data-toggle="dropdown"><i class="fa fa-bell"></i></a>
+                                <ul class="dropdown-menu" id="123" style="color:black;height:340px; width:320px; background:white;">
+                                    <li class="hienthi">
+                                        <div class="thongbao">
+                                            <h3 class="chu" style="margin: 10px 25px 0px -15px; font-size:15px; background-color:white;">
+                                                <span style="background-color:white;">News</span>
+                                                <a class="hienthi" style="margin-left:23px; margin-right:-20px; text-decoration: none; background-color:white;color: #007eff;">Setting</a>
+                                                <span class="hienthi" style="margin-right: -13px;font-size: 5px;margin-top: 7px;"><i class="fa fa-square"></i></span>
+                                                <a class="hienthi" style="text-decoration: none; background-color:white;color: #007eff;">Mark all read</a>
+                                            </h3>
+                                        </div>
+                                        <ul style="margin-left:-19%;">
+                                            <li class="divider"></li>
+                                        </ul>
+                                        <ul class="mau" style="height:235px; overflow:hidden; list-style-type:none;"></ul>
+                                        <ul style="margin-left:-19%;">
+                                            <li class="divider"></li>
+                                        </ul>
+                                        <a href="#" style="margin-left:80px; color:#3c8dbc; text-decoration:underline; background-color:white; ">See all</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                    User Name
+                                    <span class="caret"></span>
+                                </a>
+                                <ul class="dropdown-menu" id="abc">
+                                    <li><a href="#">Edit information</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="#">Exit</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <div class="heading">
+            <div class="container">
+                <div style="display:flex;">
+                    <h3 class="title" style="cursor:pointer;">Name </h3>
+                    <i class="fa fa-chevron-right" style="font-size: 29px;margin-top: 28px;color: gray;margin-left: 10px;margin-right: 10px;"></i>
+                    <h3 class="title" style="cursor:pointer;"> Wiki - Documents</h3>
+
                 </div>
             </nav>
         </div>
@@ -525,39 +568,20 @@
                                 </div>
 
                             </div>
-                        </div>
-                    </div>
 
-                    <div>
-                        <a data-toggle="modal" data-target="#taobaiviet" href="#">
-                            <span style="margin-left:20px ; float: right; margin-top: -15px;">
+                            <div style="margin-top: 40px;">
+                                <label>Content</label>
+                                <textarea class="tinymce" style="display: block;"></textarea>
+                            </div>
+                            <div style="margin-top: 40px;">
+                                <label>Attached files</label>
+                                <div style="margin-top: 20px;">
+                                    <a style="text-decoration:none;text-align: center;background-color: #fff;display: flex;cursor: pointer;justify-content: center;align-items: center;margin: -5px;height: 123px;width: 123px;border: 2px dotted #d0d0d0;">
+                                        <i class="fa fa-cloud-upload" style="float:left;"></i>
+                                        <span style="margin-left:10px;">Upload the file</span>
+                                        <input type="file" style="opacity: 0; position: absolute;" />
+                                    </a>
 
-                                Create Category
-                            </span>
-                        </a>
-                        <div class="modal fade" id="taobaiviet" role="dialog">
-                            <div class="modal-dialog">
-
-                                <!-- Modal content-->
-                                <div class="modal-content">
-                                    <div style="margin: 20px;">
-                                        <div>
-
-                                            <h4 class="modal-title">says</h4>
-                                        </div>
-                                        <div>
-                                            <span style="font-size:20px">
-                                                Create Category
-                                            </span>
-                                        </div>
-                                        <div>
-                                            <input class="form-control" type="text" />
-                                        </div>
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button type="button" ; style="border-radius:20px ;font-size:18px;height:40px;background-color:dodgerblue" class="btn btn-group" data-dismiss="modal">Ok</button>
-                                        <button type="button" ; style="border-radius:20px ;font-size:18px;height:40px" class="btn btn-group" data-dismiss="modal">CanCel</button>
-                                    </div>
                                 </div>
 
                             </div>
@@ -571,12 +595,112 @@
             </div>
             <div class="col-sm-9"></div>
         </div>
-        </li>
 
-        </ul>
-        <br>
-    </div>
-    </div>
+        <script>
+            function myFunction() {
+                var txt;
+                var person = prompt("Enter the folder name you want to create:");
+                if (person == null || person == "") {
+                    txt = "";
+                } else {
+                    txt = person;
+                }
+                document.getElementById("demo").innerHTML = txt;
+            }
+
+            function myFunction2() {
+                var txt;
+                var person = prompt("Enter the title of the article:");
+                if (person == null || person == "") {
+                    txt = "";
+                } else {
+                    txt = person;
+                }
+                document.getElementById("demo").innerHTML = txt;
+            }
+        </script>
+        <script>
+            var main = document.querySelector('main'),
+                tree = new VanillaTree(main, {
+                    contextmenu: [{
+                        label: 'Add',
+                        action: function (id) {
+                            var txt;
+                            var person = prompt("Enter the folder name you want to create:");
+                            if (person == null || person == "") {
+                                txt = "";
+                            } else {
+                                txt = person;
+                            }
+                            document.getElementById("demo").innerHTML = txt;
+                        }
+                    }, {
+                        label: 'Create',
+                        action: function (id) {
+                            var txt;
+                            var person = prompt("Enter the title of the article:");
+                            if (person == null || person == "") {
+                                txt = "";
+                            } else {
+                                txt = person;
+                            }
+                            document.getElementById("demo").innerHTML = txt;
+                        }
+                    },
+                    {
+                        label: 'Edit',
+                        action: function (id) {
+                            var txt;
+                            var person = prompt("Do you really want to delete?");
+                            if (person == null || person == "") {
+                                txt = "";
+                            } else {
+                                txt = person;
+                            }
+                            document.getElementById("demo").innerHTML = txt;
+                        }
+                    },
+                    {
+                        label: 'Delete',
+                        action: function (id) {
+                            confirm("Do you really want to delete?");
+                        }
+                    }]
+                });
+            tree.add({
+                label: 'Label A',
+                id: 'a',
+                opened: true
+            });
+
+            tree.add({
+                label: 'Label B',
+                id: 'b'
+            });
+
+
+
+            // add new nodes
+            tree.add(options);
+
+            // move a node to parent
+            tree.move(id, parentId);
+
+            // remove a node
+            tree.remove(id);
+
+            // open a node
+            tree.open(id);
+
+            // close a node
+            tree.close(id);
+
+            // toggle a node
+            tree.toggle(id);
+
+            // select a node
+            tree.select(id);
+        </script>
 
 </body>
 </html>
