@@ -56,19 +56,27 @@
     <link href="plugins/alertify/css/themes/default.min.css" rel="stylesheet" />
     <link href="plugins/alertify/css/alertify.min.css" rel="stylesheet" />
 
-    <script type="text/javascript" src="dist/tinymce.min.js"></script>
-    <script type="text/javascript">tinymce.init({
-            selector: "textarea",
-            plugins: ["table", "code"],
-            tools: "inserttable",
-            menu: {
-                edit: { title: 'Edit', items: 'undo redo | cut copy paste | selectall' },
-                view: { title: 'View', items: 'visualaid code' },
-                table: { title: 'Table', items: 'inserttable' },
-            },
-            toolbar: "undo redo | bold italic | table | code"
+    <!--<script type="text/javascript" src="dist/tinymce.min.js"></script>-->
 
-        });</script>
+    <script src="../tinymce/tinymce.min.js"></script>
+    <script>
+        tinymce.init({
+            branding: false,
+            menubar: false,
+            relative_urls: false,
+            remove_script_host: false,
+            entity_encoding: "raw",
+            valid_elements: '*[*]',
+            selector: "textarea.tinymce",
+            theme: "modern",
+            height: 300,
+            forced_root_block: "",
+            plugins: [
+                "advlist autolink link image lists charmap print preview hr anchor pagebreak spellchecker", "searchreplace wordcount visualblocks visualchars code fullscreen insertdatetime media nonbreaking", "save table contextmenu directionality emoticons template paste textcolor"
+            ],
+            toolbar: "code insertfile undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image | print preview media fullpage | forecolor backcolor emoticons",
+        });
+    </script>
     <style>
 
         .skin-blue .wrapper {
@@ -565,7 +573,7 @@
                             </div>
                             <div style="margin-top: 40px;">
                                 <label>Content</label>
-                                <textarea style="display: block;"></textarea>
+                                <textarea class="tinymce" style="display: block;"></textarea>
                             </div>
                             <div style="margin-top: 40px;">
                                 <label>Attached files</label>
