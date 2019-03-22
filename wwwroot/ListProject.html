@@ -2,14 +2,12 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Project</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>List Of Project</title>
     <!-- Tell the browser to be responsive to screen width -->
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <!-- Bootstrap 3.3.7 -->
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
-
     <!-- Font Awesome -->
     <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
     <!-- Ionicons -->
@@ -28,7 +26,7 @@
     <!-- Daterange picker -->
     <link rel="stylesheet" href="bower_components/bootstrap-daterangepicker/daterangepicker.css">
     <!-- bootstrap wysihtml5 - text editor -->
-    <link rel="stylesheet" href="/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css">
+    <link rel="stylesheet" href="plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -37,220 +35,10 @@
     <![endif]-->
     <!-- Google Font -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-
-
     <style>
-
-
-        @media screen and (max-width:200px) {
-        }
-
-        table {
-            border-collapse: collapse;
-            width: 100%;
-        }
-
-        th, td {
-            padding: 8px;
-            text-align: left;
-            border-bottom: 1px solid #ddd;
-        }
-
-        tr:hover {
-            background-color: #f5f5f5;
-        }
-
-        th, td {
-            padding: 8px;
-            text-align: left;
-            border-bottom: 1px solid #ddd;
-        }
-
-        .dropbtn {
-            background-color: #3c8dbc;
-            color: white;
-            padding: 19px;
-            font-size: 16px;
-            border: none;
-            cursor: pointer;
-        }
-
-            .dropbtn:hover, .dropbtn:focus {
-                background-color: #2980B9;
-            }
-
-        .dropdown {
-            position: relative;
-            display: inline-block;
-        }
-
-        .filterbarfull {
-            position: absolute;
-            width: 320px;
-            background: #f8f8f8;
-            top: 130px;
-            z-index: 1;
-            padding: 5px;
-            border: 3px solid #ddd;
-            box-shadow: 4px 4px 8px #ccc;
-            border-radius: 0 0 4px 4px;
-            border-top-width: 5px;
-            margin: -7px 0 0;
-        }
-
-            .filterbarfull tr td:first-child {
-                text-align: right;
-            }
-
-            .filterbarfull table {
-                font-size: smaller;
-            }
-
-        .dropdown-content {
-            display: none;
-            position: absolute;
-            background-color: #367fa9;
-            color: white;
-            min-width: 160px;
-            overflow: auto;
-            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-            z-index: 1;
-        }
-
-            .dropdown-content a {
-                color: white;
-                padding: 12px 16px;
-                text-decoration: none;
-                display: block;
-                width: 200px;
-            }
-
-        .dropdown a:hover {
-        }
-
-        .show {
-            display: block;
-        }
-
-        .dropdown-content a:hover {
-            background-color: #1377da;
-        }
-
-        .dropdown:hover .dropdown-content {
-            display: block;
-        }
-
-        .dropdown:hover .dropbtn {
-            background-color: #367fa9;
-        }
-
-        .bangtin {
-            float: right;
-            margin-left: 10px;
-        }
-
-        .thongbao {
-            width: 300px;
-            top: 30px;
-        }
-
-        .hienthibangtin {
-            float: right;
-            margin-left: 15px;
-        }
-
-        h3 a {
-            background-color: white;
-        }
-
-        #logo {
-            height: 60px;
-            font-size: 20px;
-            background-color: #3c8dbc;
-            color: white;
-            width: 230px;
-            text-align: center;
-            float: left;
-            border: none;
-            cursor: pointer;
-        }
-
-        .dropct {
-            position: absolute;
-        }
-
-        #logo:hover, #logo:focus {
-            background-color: #2980B9;
-        }
-
-        .abc {
-            color: black;
-        }
-
-        .chuphinh {
-            background-color: #767676;
-            color: white;
-            text-shadow: none;
-            background-image: none;
-            border-radius: 20px;
-            padding: 11px;
-            font-size: 18px;
-        }
-
-            .chuphinh:hover {
-                color: white;
-                background-color: #7676769e;
-            }
-
-        .chamcong {
-            display: inline-block;
-            min-height: 1em;
-            outline: 0;
-            border-radius: 20px;
-            border: none;
-            background: cornflowerblue;
-            color: white;
-            font-weight: 700;
-            line-height: 4em;
-            text-align: center;
-        }
-
-            .chamcong:hover {
-                background-color: #6764ed;
-            }
-
-        .filter-project {
-            position: absolute;
-            width: 320px;
-            background: #f8f8f8;
-        }
-
-        .timkiem {
-            background-color: #2185D0; /*#1678c2*/
-            color: #FFF;
-            border: none;
-            font-style: normal;
-            font-weight: 700;
-            text-align: center;
-            padding: .78571429em 1.5em;
-            margin: 0 .25em 0 0;
-            width: 100%;
-            border-radius: 20px;
-        }
-
-        .btn-createproject {
-            background-color: black;
-            color: white;
-            text-shadow: none;
-            background-image: none;
-            border-radius: 20px;
-            padding: 6px;
-        }
         .skin-blue .wrapper {
             background-color: white;
         }
@@ -267,6 +55,11 @@
         }
 
         .container-fluid {
+            /*font-size: 1.3em;
+            background: #3498db;
+            position: fixed;
+            z-index: 700;
+            width: 100%;*/
         }
 
         .navbar-inverse :hover {
@@ -308,6 +101,212 @@
                 color: #f5f5f5;
             }
 
+        #abc {
+            background: white;
+        }
+
+            #abc > li > a {
+                color: #000;
+                display: block;
+                width: 100%;
+            }
+
+        .container {
+            width: 100%;
+            background: #f0f0f0;
+            margin-top: -20PX;
+        }
+
+
+        .h3, h3 {
+            font-size: 20px;
+        }
+
+        .h3, h3 {
+            margin-top: 30px;
+            margin-bottom: 19px;
+        }
+
+        #notifywidget h3 {
+            height: 40px;
+            line-height: 26px;
+            font-size: 1em;
+            background: #fff;
+            padding: 7px 5px;
+            font-size: .9em;
+            font-weight: 700;
+            border-bottom: 1px solid #eee;
+            margin: 0;
+        }
+
+        .hienthi {
+            float: right;
+            margin-left: 0px;
+        }
+
+        .thongbao {
+            width: 300px;
+            top: 30px;
+        }
+
+        .hienthi:hover {
+            background-color: white;
+        }
+
+        .thongbao:hover {
+            background-color: white;
+        }
+
+        .thongbao.chu:hover {
+            background-color: white;
+        }
+
+        .mau:hover {
+            background-color: white;
+        }
+
+        li > a > #abc:hover {
+            background-color: #ddd;
+        }
+
+        .pull-right {
+            float: right;
+        }
+
+        .headingbuttons {
+            border-left: 0 solid #ddd;
+            border-right: 0 solid #ddd;
+            position: relative;
+            padding: 5px 5px 0 0;
+            margin: -35px 15px -5px 0px;
+        }
+
+        .btn {
+            background-color: #555;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 20px;
+        }
+
+        .asc:hover {
+            background-color: #333;
+            color: white;
+        }
+
+
+
+        .blue {
+            background-color: #3498db;
+            border: none;
+            color: white;
+            padding: 5px 20px;
+            font-size: 13px;
+            cursor: pointer;
+            border-radius: 20px;
+        }
+
+            .blue:hover {
+                background-color: #2980b9;
+                color: white;
+            }
+
+        .btn-primary {
+            background-color: #aad8f7;
+            color: white;
+            padding: 5px 20px;
+            font-size: 13px;
+            cursor: pointer;
+            border-radius: 20px;
+        }
+
+            .btn-primary:hover {
+                background-color: #aad8f7;
+            }
+
+        .colorChooser:hover {
+            background: lightblue;
+        }
+
+        .filterbarfull {
+            position: absolute;
+            width: 320px;
+            background: #f8f8f8;
+            top: 130px;
+            z-index: 1;
+            padding: 5px;
+            border: 3px solid #ddd;
+            box-shadow: 4px 4px 8px #ccc;
+            border-radius: 0 0 4px 4px;
+            border-top-width: 5px;
+            margin: -7px 0 0;
+        }
+
+        .form {
+            font-size: 1em;
+            max-width: 100%;
+            position: relative;
+        }
+
+        .table {
+            border-collapse: collapse;
+            border-spacing: 0;
+        }
+
+        .btn-default {
+            background-color: #607D8B;
+            border-radius: 0px;
+            padding: 4px 6px 3px 0px;
+        }
+
+        .fa-caret-down {
+            margin-left: 109px;
+        }
+
+        .clo {
+            color: #9e9e9e;
+        }
+
+        #import {
+            color: #9f9d9d;
+            margin-right: -50px;
+        }
+
+            #import:hover {
+                color: black;
+            }
+
+        .bg-teal-active {
+            background-color: #2196F3 !important;
+        }
+
+        .btn-default {
+            background-color: #fdfbfb;
+            border: none;
+            color: #1c1c1c;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 20px;
+        }
+
+            .btn-default:hover {
+                background-color: #fdfbfb;
+            }
+
+        .title:hover {
+            color: #3498db;
+        }
+
+        #filters {
+            color: #5f5e5e;
+        }
+
+            #filters:hover {
+                color: black;
+            }
     </style>
 </head>
 <body class="hold-transition skin-blue sidebar-mini">
