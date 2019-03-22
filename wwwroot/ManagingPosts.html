@@ -2,12 +2,12 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Employees</title>
+
     <!-- Tell the browser to be responsive to screen width -->
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <!-- Bootstrap 3.3.7 -->
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+
     <!-- Font Awesome -->
     <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
     <!-- Ionicons -->
@@ -26,7 +26,7 @@
     <!-- Daterange picker -->
     <link rel="stylesheet" href="bower_components/bootstrap-daterangepicker/daterangepicker.css">
     <!-- bootstrap wysihtml5 - text editor -->
-    <link rel="stylesheet" href="plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css">
+    <link rel="stylesheet" href="/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -35,10 +35,12 @@
     <![endif]-->
     <!-- Google Font -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
 
     <link href="css/file-explore.css" rel="stylesheet">
     <script src="//code.jquery.com/jquery.min.js"></script>
@@ -73,6 +75,217 @@
             background-color: white;
         }
 
+
+
+        @media screen and (max-width:200px) {
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th, td {
+            padding: 8px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        tr:hover {
+            background-color: #f5f5f5;
+        }
+
+        th, td {
+            padding: 8px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .dropbtn {
+            background-color: #3c8dbc;
+            color: white;
+            padding: 19px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+        }
+
+            .dropbtn:hover, .dropbtn:focus {
+                background-color: #2980B9;
+            }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .filterbarfull {
+            position: absolute;
+            width: 320px;
+            background: #f8f8f8;
+            top: 130px;
+            z-index: 1;
+            padding: 5px;
+            border: 3px solid #ddd;
+            box-shadow: 4px 4px 8px #ccc;
+            border-radius: 0 0 4px 4px;
+            border-top-width: 5px;
+            margin: -7px 0 0;
+        }
+
+            .filterbarfull tr td:first-child {
+                text-align: right;
+            }
+
+            .filterbarfull table {
+                font-size: smaller;
+            }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #367fa9;
+            color: white;
+            min-width: 160px;
+            overflow: auto;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+            .dropdown-content a {
+                color: white;
+                padding: 12px 16px;
+                text-decoration: none;
+                display: block;
+                width: 200px;
+            }
+
+        .dropdown a:hover {
+        }
+
+        .show {
+            display: block;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #1377da;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown:hover .dropbtn {
+            background-color: #367fa9;
+        }
+
+        .bangtin {
+            float: right;
+            margin-left: 10px;
+        }
+
+        .thongbao {
+            width: 300px;
+            top: 30px;
+        }
+
+        .hienthibangtin {
+            float: right;
+            margin-left: 15px;
+        }
+
+        h3 a {
+            background-color: white;
+        }
+
+        #logo {
+            height: 60px;
+            font-size: 20px;
+            background-color: #3c8dbc;
+            color: white;
+            width: 230px;
+            text-align: center;
+            float: left;
+            border: none;
+            cursor: pointer;
+        }
+
+        .dropct {
+            position: absolute;
+        }
+
+        #logo:hover, #logo:focus {
+            background-color: #2980B9;
+        }
+
+        .abc {
+            color: black;
+        }
+
+        .chuphinh {
+            background-color: #767676;
+            color: white;
+            text-shadow: none;
+            background-image: none;
+            border-radius: 20px;
+            padding: 11px;
+            font-size: 18px;
+        }
+
+            .chuphinh:hover {
+                color: white;
+                background-color: #7676769e;
+            }
+
+        .chamcong {
+            display: inline-block;
+            min-height: 1em;
+            outline: 0;
+            border-radius: 20px;
+            border: none;
+            background: cornflowerblue;
+            color: white;
+            font-weight: 700;
+            line-height: 4em;
+            text-align: center;
+        }
+
+            .chamcong:hover {
+                background-color: #6764ed;
+            }
+
+        .filter-project {
+            position: absolute;
+            width: 320px;
+            background: #f8f8f8;
+        }
+
+        .timkiem {
+            background-color: #2185D0; /*#1678c2*/
+            color: #FFF;
+            border: none;
+            font-style: normal;
+            font-weight: 700;
+            text-align: center;
+            padding: .78571429em 1.5em;
+            margin: 0 .25em 0 0;
+            width: 100%;
+            border-radius: 20px;
+        }
+
+        .btn-createproject {
+            background-color: black;
+            color: white;
+            text-shadow: none;
+            background-image: none;
+            border-radius: 20px;
+            padding: 6px;
+        }
+
+        .skin-blue .wrapper {
+            background-color: white;
+        }
+
         .main-header .navbar {
             margin-bottom: 0px;
             margin-left: 0px;
@@ -85,11 +298,6 @@
         }
 
         .container-fluid {
-            font-size: 1.3em;
-            background: #3498db;
-            position: fixed;
-            z-index: 700;
-            width: 100%;
         }
 
         .navbar-inverse :hover {
@@ -130,284 +338,10 @@
                 background-color: #3498db;
                 color: #f5f5f5;
             }
-
-        #abc {
-            background: white;
-        }
-
-            #abc > li > a {
-                color: #000;
-                display: block;
-                width: 100%;
-            }
-
-        .container {
-            width: 100%;
-            background: #f0f0f0;
-            margin-top: -20PX;
-        }
-
-
-        .h3, h3 {
-            font-size: 20px;
-        }
-
-        .h1, .h2, .h3, h1, h2, h3 {
-            margin-top: 30px;
-            margin-bottom: 19px;
-        }
-
-        #notifywidget h3 {
-            height: 40px;
-            line-height: 26px;
-            font-size: 1em;
-            background: #fff;
-            padding: 7px 5px;
-            font-size: .9em;
-            font-weight: 700;
-            border-bottom: 1px solid #eee;
-            margin: 0;
-        }
-
-        .hienthi {
-            float: right;
-            margin-left: 0px;
-        }
-
-        .thongbao {
-            width: 300px;
-            top: 30px;
-        }
-
-        .hienthi:hover {
-            background-color: white;
-        }
-
-        .thongbao:hover {
-            background-color: white;
-        }
-
-        .thongbao.chu:hover {
-            background-color: white;
-        }
-
-        .mau:hover {
-            background-color: white;
-        }
-
-        li > a > #abc:hover {
-            background-color: #ddd;
-        }
-
-        .pull-right {
-            float: right;
-        }
-
-        .headingbuttons {
-            border-left: 0 solid #ddd;
-            border-right: 0 solid #ddd;
-            position: relative;
-            padding: 5px 5px 0 0;
-            margin: -35px 15px -5px 0px;
-        }
-
-        .btn {
-            background-color: #555;
-            border: none;
-            color: white;
-            padding: 10px 20px;
-            font-size: 16px;
-            cursor: pointer;
-            border-radius: 20px;
-        }
-
-        .asc:hover {
-            background-color: #333;
-            color: white;
-        }
-
-        .blue {
-            background-color: #3498db;
-            border: none;
-            color: white;
-            padding: 5px 20px;
-            font-size: 13px;
-            cursor: pointer;
-            border-radius: 20px;
-        }
-
-            .blue:hover {
-                background-color: #2980b9;
-                color: white;
-            }
-
-        .btn-primary {
-            background-color: #aad8f7;
-            color: white;
-            padding: 5px 20px;
-            font-size: 13px;
-            cursor: pointer;
-            border-radius: 20px;
-        }
-
-            .btn-primary:hover {
-                background-color: #aad8f7;
-            }
-
-        .colorChooser:hover {
-            background: lightblue;
-        }
-
-        .filterbarfull {
-            position: absolute;
-            width: 320px;
-            background: #f8f8f8;
-            top: 130px;
-            z-index: 1;
-            padding: 5px;
-            border: 3px solid #ddd;
-            box-shadow: 4px 4px 8px #ccc;
-            border-radius: 0 0 4px 4px;
-            border-top-width: 5px;
-            margin: -7px 0 0;
-        }
-
-        .form {
-            font-size: 1em;
-            max-width: 100%;
-            position: relative;
-        }
-
-        .segment {
-            padding: 0 10px;
-            border-width: 0;
-            margin: 0;
-            width: auto;
-            box-shadow: none;
-            border: none;
-        }
-
-            .segment:last-child {
-                top: 0px;
-                bottom: 0px;
-                border-radius: 0 0 .28571429rem .28571429rem;
-            }
-
-        input {
-            font-family: inherit !important;
-            line-height: 1 !important;
-            color: inherit;
-            font: inherit;
-            margin: 0;
-        }
-
-        .top {
-            display: flex;
-            flex-direction: row;
-        }
-
-        .center {
-            display: flex;
-            flex-direction: row;
-            margin-top: 10px;
-        }
-
-        .save {
-            background-color: #3498db;
-            border: none;
-            color: white;
-            padding: 10px 30px;
-            font-size: 15px;
-            cursor: pointer;
-            border-radius: 20px;
-            margin-left: 400px;
-        }
-
-            .save:hover {
-                background-color: #2980b9;
-                color: white;
-            }
-
-
-        .switch {
-            position: relative;
-            display: inline-block;
-            width: 60px;
-            height: 34px;
-        }
-
-            .switch input {
-                opacity: 0;
-                width: 0;
-                height: 0;
-            }
-
-        .slider {
-            position: absolute;
-            cursor: pointer;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background-color: #ccc;
-            -webkit-transition: .4s;
-            transition: .4s;
-        }
-
-            .slider:before {
-                position: absolute;
-                content: "";
-                height: 26px;
-                width: 26px;
-                left: 4px;
-                bottom: 4px;
-                background-color: white;
-                -webkit-transition: .4s;
-                transition: .4s;
-            }
-
-        input:checked + .slider {
-            background-color: #2196F3;
-        }
-
-        input:focus + .slider {
-            box-shadow: 0 0 1px #2196F3;
-        }
-
-        input:checked + .slider:before {
-            -webkit-transform: translateX(26px);
-            -ms-transform: translateX(26px);
-            transform: translateX(26px);
-        }
-
-        .slider.round {
-            border-radius: 34px;
-        }
-
-            .slider.round:before {
-                border-radius: 50%;
-            }
-
-        .title:hover {
-            color: #3498db;
-        }
-
-        .nutchamcong {
-            background-color: #1377da;
-            color: white;
-            text-shadow: none;
-            background-image: none;
-            border-radius: 20px;
-            padding: 6px;
-        }
-
-            .nutchamcong:hover {
-                background-color: cornflowerblue;
-                cursor: pointer;
-            }
     </style>
 </head>
 <body class="hold-transition skin-blue sidebar-mini">
+
     <div class="wrapper">
         <header class="main-header">
             <div class="topnav">
@@ -426,7 +360,7 @@
                             <li class="dropdown">
                                 <a class="dropdown-toggle" data-toggle="dropdown" href="#">Timekeeping </a>
                                 <ul class="dropdown-menu">
-                                    <li><a href="TimeKeeping.html"><i class="fa fa-plus-circle"></i> Timekeeping</a></li>
+                                    <li><a href="doitruso.html"><i class="fa fa-plus-circle"></i> Timekeeping</a></li>
                                     <li><a href="KeepingHistory.html"><i class="fa fa-history"></i> Timekeeping history</a></li>
                                     <li><a href="calendar.html"><i class="fa fa-calendar"></i> Calendar</a></li>
                                     <li><a href="HourlyReport.html"><i class="fa fa-bar-chart"></i> Hourly report</a></li>
@@ -514,179 +448,321 @@
         </header>
         <div class="heading">
             <div class="container">
-                <div style="display:flex;">
-                    <h3 class="title" style="cursor:pointer;">Name </h3>
-                    <i class="fa fa-chevron-right" style="font-size: 29px;margin-top: 28px;color: gray;margin-left: 10px;margin-right: 10px;"></i>
-                    <h3 class="title" style="cursor:pointer;"> Wiki - Documents</h3>
-                </div>
-                <ul class="nav nav-tabs" style="display:block; list-style-type:disc; ">
-                    <li class="active">
-                        <a data-toggle="tab" href="#" style="cursor:pointer;">
-                            <span style="color:black;">Editor</span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <div>
-            <div>
-                <div class="col-sm-4" style="margin-top: 40px;">
-                    <div>
-                        <div class="col-sm-4">
-                            Category
-                            <main style="margin-left: -48px;">
-                                <p id="demo"></p>
-                            </main>
-                        </div>
-                        <div class="col-sm-8">
-                            <a href="javascript:void(0)" onclick="myFunction()">Create a category</a>
-                            <a href="javascript:void(0)" onclick="myFunction2()" style="margin-left: 31px;">Create articled</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-8 " style="margin-top: 40px;border-left-style: outset;">
-                    <div>
-                        <div class="col-sm-8 form" style="border-right-style: inset;">
-                            <div style="display:flex;">
-                                <div>
-                                    <label>Post title</label>
-                                    <span style="color:red;">*</span>
-                                    <input style="display: block;height: 33px;width: 400px;" type="text" />
-                                </div>
-                                <div style="margin-left:20px;">
-                                    <label>Status</label>
-                                    <select style="display: block;height: 32px;width: 100px;">
-                                        <option>Disabled</option>
-                                        <option>Effective</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div style="margin-top: 40px;">
-                                <label>Content</label>
-                                <textarea class="tinymce" style="display: block;"></textarea>
-                            </div>
-                            <div style="margin-top: 40px;">
-                                <label>Attached files</label>
-                                <div style="margin-top: 20px;">
-                                    <a style="text-decoration:none;text-align: center;background-color: #fff;display: flex;cursor: pointer;justify-content: center;align-items: center;margin: -5px;height: 123px;width: 123px;border: 2px dotted #d0d0d0;">
-                                        <i class="fa fa-cloud-upload" style="float:left;"></i>
-                                        <span style="margin-left:10px;">Upload the file</span>
-                                        <input type="file" style="opacity: 0; position: absolute;" />
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-4" style="text-align: center;">
-                            <button class="nutchamcong" style="width: 60%;border: none;"> Save information</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <script>
-            function myFunction() {
-                var txt;
-                var person = prompt("Enter the folder name you want to create:");
-                if (person == null || person == "") {
-                    txt = "";
-                } else {
-                    txt = person;
-                }
-                document.getElementById("demo").innerHTML = txt;
-            }
 
-            function myFunction2() {
-                var txt;
-                var person = prompt("Enter the title of the article:");
-                if (person == null || person == "") {
-                    txt = "";
-                } else {
-                    txt = person;
+                </nav>
+            </div>
+            </header>
+            <div class="container" style="background-color: #eee;height: 106px;width: 100%;margin-top: -19px;">
+
+                <div style="margin-bottom: -11px;margin-top: -20px;">
+                    <br />
+                    <a class="abc tab-content" href="Project.html">
+                        <span>
+                            <h2 style="cursor:pointer;">Project</h2>
+                        </span>
+                    </a>
+                    <div>
+
+                    </div>
+                    <ul class="nav nav-tabs" style="margin-right:-202px;padding-inline-start: 40px;">
+
+                        <li class="active"><a href="#" style="cursor:pointer;height: 44px;">All</a></li>
+
+
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" style="padding-right: 30px;color:black;cursor:pointer;" title="Turn on / off the search function">Filter & search ...</a>
+                            <ul class="dropdown-menu filterbarfull filterbar" style="top: 41.1146px;left: -2.319px;">
+                                <li>
+                                    <form class="ui form">
+                                        <table style="margin:10px" ;cellpadding="10">
+                                            <tbody style="width:100%;height:100%" width="100%">
+                                                <tr>
+                                                    <td style="text-align:right">
+                                                        <label>Key word</label>
+                                                    </td>
+                                                    <td>
+                                                        <div class="col-sm-10"></div>
+                                                        <input class="form-control" type="text" name="keyword" ;border-style="groove" />
+                                                    </td>
+
+                                                </tr>
+                                                <tr>
+                                                    <td style="text-align:right">
+                                                        <label>Status</label>
+                                                    </td>
+                                                    <td>
+                                                        <div class="form-group"></div>
+                                                        <div class="col-sm-10"></div>
+                                                        <select class="form-control">
+                                                            <option>All</option>
+                                                            <option>Working</option>
+                                                        </select>
+                                                    </td>
+
+
+                                                </tr>
+
+
+                                                <tr>
+                                                    <div>
+                                                        <td style="text-align:center;padding-top: 10px;" ; colspan="2">
+                                                            <button type="button" class="timkiem">Search</button>
+                                                        </td>
+                                                    </div>
+
+                                                </tr>
+                                                <tr>
+
+                                                    <td colspan="2" style="text-align:center;padding-top: 17px;">
+                                                        <a href="#">Close</a>
+                                                    </td>
+
+                                                </tr>
+
+
+                                            </tbody>
+                                        </table>
+
+                </div>
+
+                </form><br />
+                <div style="display:flex" class="row">
+                    <div class="col-sm-3" style="border-right-style:inset">
+                        <div>
+                            <div>
+                                <span>Category</span>
+                            </div>
+                            <div> Create Category</div>
+
+                            <div class="modal fade" id="taodanhmuc" role="dialog">
+                                <div class="modal-dialog">
+
+                                    <!-- Modal content-->
+                                    <div class="modal-content">
+                                        <div style="margin: 20px;">
+                                            <div>
+
+                                                <h4 class="modal-title">says</h4>
+                                            </div>
+                                            <div>
+                                                <span style="font-size:20px">Create a Article</span>
+                                            </div>
+                                            <div>
+                                                <input class="form-control" type="text" />
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <a href="ManagingPosts2.html" style="border-radius:20px ;font-size:18px;height:40px;background-color:dodgerblue" class="btn btn-group" data-dismiss="modal">Ok</a>
+                                            <button type="button" ; style="border-radius:20px ;font-size:18px;height:40px" class="btn btn-group" data-dismiss="modal">CanCel</button>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <div>
+                                <a data-toggle="modal" data-target="#taodanhmuc" href="#">
+                                    <span style="margin-left:20px ; float: right; margin-top: -15px;">
+                                        Create Article
+                                    </span>
+                                </a>
+                                <div class="modal fade" id="taodanhmuc" role="dialog">
+                                    <div class="modal-dialog">
+
+                                        <!-- Modal content-->
+                                        <div class="modal-content">
+                                            <div style="margin: 20px;">
+                                                <div>
+
+                                                    <h4 class="modal-title">says</h4>
+                                                </div>
+                                                <div>
+                                                    <span style="font-size:20px">Create a Article</span>
+                                                </div>
+                                                <div>
+                                                    <input class="form-control" type="text" />
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" ; style="border-radius:20px ;font-size:18px;height:40px;background-color:dodgerblue" class="btn btn-group" data-dismiss="modal">Ok</button>
+                                                <button type="button" ; style="border-radius:20px ;font-size:18px;height:40px" class="btn btn-group" data-dismiss="modal">CanCel</button>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                                <div class="modal fade" id="taodanhmuc" role="dialog">
+                                    <div class="modal-dialog">
+
+                                        <!-- Modal content-->
+                                        <div class="modal-content">
+                                            <div style="margin: 20px;">
+                                                <div>
+
+                                                    <h4 class="modal-title">says</h4>
+                                                </div>
+                                                <div>
+                                                    <span style="font-size:20px">Create a Article</span>
+                                                </div>
+                                                <div>
+                                                    <input class="form-control" type="text" />
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" ; style="border-radius:20px ;font-size:18px;height:40px;background-color:dodgerblue" class="btn btn-group" data-dismiss="modal">Ok</button>
+                                                <button type="button" ; style="border-radius:20px ;font-size:18px;height:40px" class="btn btn-group" data-dismiss="modal">CanCel</button>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                                <div class="modal fade" id="taodanhmuc" role="dialog">
+                                    <div class="modal-dialog">
+
+                                        <!-- Modal content-->
+                                        <div class="modal-content">
+                                            <div style="margin: 20px;">
+                                                <div>
+
+                                                    <h4 class="modal-title">says</h4>
+                                                </div>
+                                                <div>
+                                                    <span style="font-size:20px">Create a Article</span>
+                                                </div>
+                                                <div>
+                                                    <input class="form-control" type="text" />
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" ; style="border-radius:20px ;font-size:18px;height:40px;background-color:dodgerblue" class="btn btn-group" data-dismiss="modal">Ok</button>
+                                                <button type="button" ; style="border-radius:20px ;font-size:18px;height:40px" class="btn btn-group" data-dismiss="modal">CanCel</button>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                            </div>
+
+
+                        </div>
+
+
+
+
+                    </div>
+                </div>
+                <div class="col-sm-9"></div>
+            </div>
+
+            <script>
+                function myFunction() {
+                    var txt;
+                    var person = prompt("Enter the folder name you want to create:");
+                    if (person == null || person == "") {
+                        txt = "";
+                    } else {
+                        txt = person;
+                    }
+                    document.getElementById("demo").innerHTML = txt;
                 }
-                document.getElementById("demo").innerHTML = txt;
-            }
-        </script>
-        <script>
-            var main = document.querySelector('main'),
-                tree = new VanillaTree(main, {
-                    contextmenu: [{
-                        label: 'Add',
-                        action: function (id) {
-                            var txt;
-                            var person = prompt("Enter the folder name you want to create:");
-                            if (person == null || person == "") {
-                                txt = "";
-                            } else {
-                                txt = person;
+
+                function myFunction2() {
+                    var txt;
+                    var person = prompt("Enter the title of the article:");
+                    if (person == null || person == "") {
+                        txt = "";
+                    } else {
+                        txt = person;
+                    }
+                    document.getElementById("demo").innerHTML = txt;
+                }
+            </script>
+            <script>
+                var main = document.querySelector('main'),
+                    tree = new VanillaTree(main, {
+                        contextmenu: [{
+                            label: 'Add',
+                            action: function (id) {
+                                var txt;
+                                var person = prompt("Enter the folder name you want to create:");
+                                if (person == null || person == "") {
+                                    txt = "";
+                                } else {
+                                    txt = person;
+                                }
+                                document.getElementById("demo").innerHTML = txt;
                             }
-                            document.getElementById("demo").innerHTML = txt;
-                        }
-                    }, {
-                        label: 'Create',
-                        action: function (id) {
-                            var txt;
-                            var person = prompt("Enter the title of the article:");
-                            if (person == null || person == "") {
-                                txt = "";
-                            } else {
-                                txt = person;
+                        }, {
+                            label: 'Create',
+                            action: function (id) {
+                                var txt;
+                                var person = prompt("Enter the title of the article:");
+                                if (person == null || person == "") {
+                                    txt = "";
+                                } else {
+                                    txt = person;
+                                }
+                                document.getElementById("demo").innerHTML = txt;
                             }
-                            document.getElementById("demo").innerHTML = txt;
-                        }
-                    },
-                    {
-                        label: 'Edit',
-                        action: function (id) {
-                            var txt;
-                            var person = prompt("Do you really want to delete?");
-                            if (person == null || person == "") {
-                                txt = "";
-                            } else {
-                                txt = person;
+                        },
+                        {
+                            label: 'Edit',
+                            action: function (id) {
+                                var txt;
+                                var person = prompt("Do you really want to delete?");
+                                if (person == null || person == "") {
+                                    txt = "";
+                                } else {
+                                    txt = person;
+                                }
+                                document.getElementById("demo").innerHTML = txt;
                             }
-                            document.getElementById("demo").innerHTML = txt;
-                        }
-                    },
-                    {
-                        label: 'Delete',
-                        action: function (id) {
-                            confirm("Do you really want to delete?");
-                        }
-                    }]
+                        },
+                        {
+                            label: 'Delete',
+                            action: function (id) {
+                                confirm("Do you really want to delete?");
+                            }
+                        }]
+                    });
+                tree.add({
+                    label: 'Label A',
+                    id: 'a',
+                    opened: true
                 });
-            tree.add({
-                label: 'Label A',
-                id: 'a',
-                opened: true
-            });
 
-            tree.add({
-                label: 'Label B',
-                id: 'b'
-            });
+                tree.add({
+                    label: 'Label B',
+                    id: 'b'
+                });
 
 
 
-            // add new nodes
-            tree.add(options);
+                // add new nodes
+                tree.add(options);
 
-            // move a node to parent
-            tree.move(id, parentId);
+                // move a node to parent
+                tree.move(id, parentId);
 
-            // remove a node
-            tree.remove(id);
+                // remove a node
+                tree.remove(id);
 
-            // open a node
-            tree.open(id);
+                // open a node
+                tree.open(id);
 
-            // close a node
-            tree.close(id);
+                // close a node
+                tree.close(id);
 
-            // toggle a node
-            tree.toggle(id);
+                // toggle a node
+                tree.toggle(id);
 
-            // select a node
-            tree.select(id);
-        </script>
+                // select a node
+                tree.select(id);
+            </script>
+
 </body>
 </html>

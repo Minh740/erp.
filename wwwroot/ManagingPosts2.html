@@ -1,9 +1,10 @@
+﻿@@ -0,0 +1,708 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Employee grading history</title>
+    <title>Project -> Name</title>
     <!-- Tell the browser to be responsive to screen width -->
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <!-- Bootstrap 3.3.7 -->
@@ -38,8 +39,40 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+    <link href="css/file-explore.css" rel="stylesheet">
+    <script src="//code.jquery.com/jquery.min.js"></script>
+    <script src="js/file-explore.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="dist/vanillatree.css" rel="stylesheet" />
+    <script src="dist/vanillatree.js"></script>
+    <script src="plugins/tinymce/tinymce.min.js"></script>
+    <link href="/cp/alertify/css/alertify.min.css" rel="stylesheet" />
+    <link href="/cp/alertify/css/themes/default.min.css" rel="stylesheet" />
+    <script src="/cp/alertify/alertify.min.js"></script>
+    <!--tinyamce-->
+    <script src="plugins/alertify/alertify.js"></script>
+    <script src="plugins/alertify/alertify.min.js"></script>
+    <link href="plugins/alertify/css/themes/default.min.css" rel="stylesheet" />
+    <link href="plugins/alertify/css/alertify.min.css" rel="stylesheet" />
+
+    <script type="text/javascript" src="dist/tinymce.min.js"></script>
+    <script type="text/javascript">
+tinymce.init({
+            selector: "textarea",
+            plugins: ["table", "code"],
+            tools: "inserttable",
+            menu: {
+                edit: { title: 'Edit', items: 'undo redo | cut copy paste | selectall' },
+                view: { title: 'View', items: 'visualaid code' },
+                table: { title: 'Table', items: 'inserttable' },
+            },
+            toolbar: "undo redo | bold italic | table | code"
+
+        });</script>
     <style>
+
         .skin-blue .wrapper {
             background-color: white;
         }
@@ -56,11 +89,11 @@
         }
 
         .container-fluid {
-            /*font-size: 1.3em;
+            font-size: 1.3em;
             background: #3498db;
             position: fixed;
             z-index: 700;
-            width: 100%;*/
+            width: 100%;
         }
 
         .navbar-inverse :hover {
@@ -115,7 +148,7 @@
         .container {
             width: 100%;
             background: #f0f0f0;
-            margin-top: -20px;
+            margin-top: -20PX;
         }
 
 
@@ -123,10 +156,9 @@
             font-size: 20px;
         }
 
-        .h3, h3 {
+        .h1, .h2, .h3, h1, h2, h3 {
             margin-top: 30px;
             margin-bottom: 19px;
-            width: 30%;
         }
 
         #notifywidget h3 {
@@ -198,6 +230,21 @@
             color: white;
         }
 
+        .blue {
+            background-color: #3498db;
+            border: none;
+            color: white;
+            padding: 5px 20px;
+            font-size: 13px;
+            cursor: pointer;
+            border-radius: 20px;
+        }
+
+            .blue:hover {
+                background-color: #2980b9;
+                color: white;
+            }
+
         .btn-primary {
             background-color: #aad8f7;
             color: white;
@@ -213,6 +260,26 @@
 
         .colorChooser:hover {
             background: lightblue;
+        }
+
+        .filterbarfull {
+            position: absolute;
+            width: 320px;
+            background: #f8f8f8;
+            top: 130px;
+            z-index: 1;
+            padding: 5px;
+            border: 3px solid #ddd;
+            box-shadow: 4px 4px 8px #ccc;
+            border-radius: 0 0 4px 4px;
+            border-top-width: 5px;
+            margin: -7px 0 0;
+        }
+
+        .form {
+            font-size: 1em;
+            max-width: 100%;
+            position: relative;
         }
 
         .segment {
@@ -238,73 +305,110 @@
             margin: 0;
         }
 
-        .fields {
+        .top {
             display: flex;
             flex-direction: row;
-            -webkit-box-direction: normal;
-            -webkit-box-orient: horizontal;
         }
 
-        .them {
+        .center {
+            display: flex;
+            flex-direction: row;
+            margin-top: 10px;
+        }
+
+        .save {
             background-color: #3498db;
             border: none;
             color: white;
-            padding: 3px 20px;
-            font-size: 13px;
+            padding: 10px 30px;
+            font-size: 15px;
             cursor: pointer;
             border-radius: 20px;
-            margin-left: 300px;
+            margin-left: 400px;
         }
 
-            .them:hover {
+            .save:hover {
                 background-color: #2980b9;
                 color: white;
             }
 
-        .form-control {
-            width: 50%;
+
+        .switch {
+            position: relative;
+            display: inline-block;
+            width: 60px;
+            height: 34px;
         }
+
+            .switch input {
+                opacity: 0;
+                width: 0;
+                height: 0;
+            }
+
+        .slider {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #ccc;
+            -webkit-transition: .4s;
+            transition: .4s;
+        }
+
+            .slider:before {
+                position: absolute;
+                content: "";
+                height: 26px;
+                width: 26px;
+                left: 4px;
+                bottom: 4px;
+                background-color: white;
+                -webkit-transition: .4s;
+                transition: .4s;
+            }
+
+        input:checked + .slider {
+            background-color: #2196F3;
+        }
+
+        input:focus + .slider {
+            box-shadow: 0 0 1px #2196F3;
+        }
+
+        input:checked + .slider:before {
+            -webkit-transform: translateX(26px);
+            -ms-transform: translateX(26px);
+            transform: translateX(26px);
+        }
+
+        .slider.round {
+            border-radius: 34px;
+        }
+
+            .slider.round:before {
+                border-radius: 50%;
+            }
 
         .title:hover {
             color: #3498db;
         }
-        .inputfile {
-            width: 0.1px;
-            height: 0.1px;
-            opacity: 0;
-            overflow: hidden;
-            position: absolute;
-            z-index: -1;
+
+        .nutchamcong {
+            background-color: #1377da;
+            color: white;
+            text-shadow: none;
+            background-image: none;
+            border-radius: 20px;
+            padding: 6px;
         }
 
-            .inputfile:focus + label,
-            .inputfile.has-focus + label {
-                outline: 1px dotted #000;
-                outline: -webkit-focus-ring-color auto 5px;
+            .nutchamcong:hover {
+                background-color: cornflowerblue;
+                cursor: pointer;
             }
-
-            .inputfile + label i,
-            .inputfile + label svg {
-                width: 1em;
-                height: 1em;
-                vertical-align: middle;
-                fill: currentColor;
-                margin-top: -0.25em;
-                margin-right: 0.25em;
-            }
-
-
-            .inputfile:focus + label,
-            .inputfile.has-focus + label,
-            .inputfile + label:hover {
-                color: #FF5722;
-            }
-        .box {
-            border-top: none;
-            box-shadow: none;
-            font-size: 10px;
-        }
-
     </style>
 </head>
 <body class="hold-transition skin-blue sidebar-mini">
@@ -316,7 +420,7 @@
                         <ul class="nav navbar-nav">
                             <li class="dropdown">
                                 <a class="logo-lg" data-toggle="dropdown" href="#">Basecrop </a>
-                                <ul class="dropdown-menu" style="border: none;">
+                                <ul class="dropdown-menu">
                                     <li><a href="Main.html"><i class="fa fa-home"></i> Dashboard</a></li>
                                     <li><a href="CompanyDocuments.html"><i class="fa fa-folder"></i> Company documents</a></li>
                                     <li><a href="InstallationAndConfiguration.html"><i class="fa fa-cog"></i> Installation & Configuration</a></li>
@@ -324,9 +428,9 @@
                                 </ul>
                             </li>
                             <li class="dropdown">
-                                <a class="dropdown-toggle " data-toggle="dropdown" href="#">Timekeeping </a>
-                                <ul class="dropdown-menu" style="border: none;">
-                                    <li><a href="doitruso.html"><i class="fa fa-plus-circle"></i> Timekeeping</a></li>
+                                <a class="dropdown-toggle" data-toggle="dropdown" href="#">Timekeeping </a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="TimeKeeping.html"><i class="fa fa-plus-circle"></i> Timekeeping</a></li>
                                     <li><a href="KeepingHistory.html"><i class="fa fa-history"></i> Timekeeping history</a></li>
                                     <li><a href="calendar.html"><i class="fa fa-calendar"></i> Calendar</a></li>
                                     <li><a href="HourlyReport.html"><i class="fa fa-bar-chart"></i> Hourly report</a></li>
@@ -334,7 +438,7 @@
                             </li>
                             <li class="dropdown">
                                 <a class="dropdown-toggle" data-toggle="dropdown" href="#">Mailbox</a>
-                                <ul class="dropdown-menu" style="border: none;">
+                                <ul class="dropdown-menu">
                                     <li><a href="MailBox.html"><i class="fa fa-envelope"></i> Inbox</a></li>
                                     <li><a href="SentMail.html"><i class="fa fa-arrow-left"></i> Sent</a></li>
                                     <li><a href="ComposeMail.html"><i class="fa fa-edit"></i> Compose a new message</a></li>
@@ -349,7 +453,7 @@
                             </li>
                             <li class="dropdown">
                                 <a class="dropdown-toggle" data-toggle="dropdown" href="#">Blog</a>
-                                <ul class="dropdown-menu" style="border: none;">
+                                <ul class="dropdown-menu">
                                     <li><a href="CompanyBlog.html"><i class="fa fa-leanpub"></i> Company blog</a></li>
                                     <li><a href="ForManagerBlog.html"><i class="fa fa-list"></i> Blog management</a></li>
                                     <li><a href="AddNewBlogForManager.html"><i class="fa fa-edit"></i> Write a new blog</a></li>
@@ -357,14 +461,14 @@
                             </li>
                             <li class="dropdown">
                                 <a class="dropdown-toggle" data-toggle="dropdown" href="#">Online Learning</a>
-                                <ul class="dropdown-menu" style="border: none;">
+                                <ul class="dropdown-menu">
                                     <li><a href="AllCourses.html"><i class="fa fa-leanpub"></i> All courses</a></li>
                                     <li><a href="MyCourse.html"><i class="fa fa-product-hunt"></i> My course</a></li>
                                 </ul>
                             </li>
                             <li class="dropdown">
                                 <a class="dropdown-toggle" data-toggle="dropdown" href="#">Employees</a>
-                                <ul class="dropdown-menu" style="border: none;">
+                                <ul class="dropdown-menu">
                                     <li><a href="employee.html"><i class="fa fa-address-card"></i> Employees</a></li>
                                     <li><a href="paycheck.html"><i class="fa fa-tag"></i> Paycheck</a></li>
                                     <li><a href="hrmleave.html"><i class="fa fa-bell-slash"></i> Please take leave</a></li>
@@ -414,141 +518,178 @@
         </header>
         <div class="heading">
             <div class="container">
-                <h3 class="title">Employee grading history</h3>
+                <div style="display:flex;">
+                    <h3 class="title" style="cursor:pointer;">Name </h3>
+                    <i class="fa fa-chevron-right" style="font-size: 29px;margin-top: 28px;color: gray;margin-left: 10px;margin-right: 10px;"></i>
+                    <h3 class="title" style="cursor:pointer;"> Wiki - Documents</h3>
+                </div>
                 <ul class="nav nav-tabs" style="display:block; list-style-type:disc; ">
                     <li class="active">
                         <a data-toggle="tab" href="#" style="cursor:pointer;">
-                            <span style="color:black;">Add new</span>
-                            <span class="number">0</span>
+                            <span style="color:black;">Editor</span>
                         </a>
                     </li>
                 </ul>
             </div>
         </div>
-        <div class="segment">
-            <form class="ui form">
-                <div class="fields" style="margin-top:10px;">
-                    <div class="left" style="width:25%;">
-                        <h4>
-                            <span>
-                                Detailed scoring staff
-                            </span>
-                        </h4>
-                        <p>
-                            Detailed scoring information for employees
-                        </p>
-                    </div>
-                    <div class="right" style="width:100% ; margin-top: 8px;">
-                        <div class="col-sm-7" style="margin-left:50px">
-                            <label>
-                                Headquarters<a style="margin-top: -0.2em; margin-left:0.2em;color: #DB2828;">*</a>
-                            </label>
-                            <select onclick="myFunction()" class="form-control">
-                                <option disabled selected>-----</option>
-                                <option>dfd</option>
-                            </select>
+        <div>
+            <div>
+                <div class="col-sm-4" style="margin-top: 40px;">
+                    <div>
+                        <div class="col-sm-4">
+                            Category
+                            <main style="margin-left: -48px;">
+                                <p id="demo"></p>
+                            </main>
+                        </div>
+                        <div class="col-sm-8">
+                            <a href="javascript:void(0)" onclick="myFunction()">Create a category</a>
+                            <a href="javascript:void(0)" onclick="myFunction2()" style="margin-left: 31px;">Create articled</a>
                         </div>
                     </div>
                 </div>
-                <div class="w3-container" id="myDIV" style="display: none">
-                    <table class="w3-table-all">
-                        <thead>
-                            <tr class="w3-light-grey">
-                                <th>Criteria</th>
-                                <th>Employees</th>
-                                <th></th>
-                                <th>Note</th>
-                                <th>Attached file (3 file limit)</th>
-                                <th>Point</th>
-                            </tr>
-                        </thead>
-                        <tr>
-                            <td>1. sas</td>
-                            <td>
-                                <select  style="width:200px;">
-                                    <option value="" disabled selected>-----</option>
-                                    <option value="1"></option>
-                                </select>
-                            </td>
-                            <td>
-                                <div style="width: 80px">
-                                    <a style="text-decoration:none; color:#3498db; font-size: 12px;">All employee</a>
-                                    <br />
-                                    <a style="text-decoration:none; color:#3498db; font-size: 12px;">Uncheck all</a>
+                <div class="col-sm-8 " style="margin-top: 40px;border-left-style: outset;">
+                    <div>
+                        <div class="col-sm-8 form" style="border-right-style: inset;">
+                            <div style="display:flex;">
+                                <div>
+                                    <label>Post title</label>
+                                    <span style="color:red;">*</span>
+                                    <input style="display: block;height: 33px;width: 400px;" type="text" />
                                 </div>
-                            </td>
-                            <td>
-                                <input type="text" style="width:200px;" name="">
-                            </td>
-                            <td>
-                                <div class="box">
-                                    <input type="file" name="file-2[]" id="file-2" class="inputfile inputfile-2" data-multiple-caption="{count} files selected" multiple="">
-                                    <label for="file-2"><i class="fa fa-paperclip"></i><span>File attached...</span></label>
+                                <div style="margin-left:20px;">
+                                    <label>Status</label>
+                                    <select style="display: block;height: 32px;width: 100px;">
+                                        <option>Disabled</option>
+                                        <option>Effective</option>
+                                    </select>
                                 </div>
-                            </td>
-                            <td>
-                                <a href="#"><label style="font-size:12px; background-color: #2185D0;border-color: #2185D0;color: #FFF;padding: 7px 10px;">10</label></a>
-                            </td>
-                        </tr>
-                    </table>
-                </div>
-                <div class="bottom" style="border-top-style:outset; margin-top: 10px;">
-                    <div class="field wide hideonsmall four" style=" margin-top: 10px;">
-                        <p class="requirebox">
-                            <span>* : </span>
-                            <span>
-                                Obligatory
-                            </span>
-                        </p>
-                    </div>
-                    <div class="add" style=" margin-top: -25px; margin-left:200px">
-                        <a class="btn them" href="#">
-                            MORE
-                        </a>
+                            </div>
+                            <div style="margin-top: 40px;">
+                                <label>Content</label>
+                                <textarea style="display: block;"></textarea>
+                            </div>
+                            <div style="margin-top: 40px;">
+                                <label>Attached files</label>
+                                <div>
+                                    <a style="text-decoration:none;text-align: center;background-color: #fff;display: flex;cursor: pointer;justify-content: center;align-items: center;margin: -5px;height: 123px;width: 123px;border: 2px dotted #d0d0d0;">
+                                        <i class="fa fa-cloud-upload" style="float:left;"></i>
+                                        <span style="margin-left:10px;">Upload the file</span>
+                                        <input type="file" style="opacity: 0; position: absolute;" />
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4" style="text-align: center;">
+                            <button class="nutchamcong" style="width: 60%;border: none;"> Save information</button>
+                        </div>
                     </div>
                 </div>
-            </form>
+            </div>
         </div>
-
     </div>
     <script>
-
-        function myFunction() {
-            var x = document.getElementById("myDIV");
-            if (x.style.display === "none") {
-                x.style.display = "block";
+function myFunction() {
+            var txt;
+            var person = prompt("Enter the folder name you want to create:");
+            if (person == null || person == "") {
+                txt = "";
             } else {
-                x.style.display = "none";
+                txt =  person ;
             }
+            document.getElementById("demo").innerHTML = txt;
         }
 
-        'use strict';
-
-        ; (function (document) {
-            var inputs = document.querySelectorAll('.inputfile');
-            Array.prototype.forEach.call(inputs, function (input) {
-                var label = input.nextElementSibling,
-                    labelVal = label.innerHTML;
-
-                input.addEventListener('change', function (e) {
-                    var fileName = '';
-                    if (this.files && this.files.length > 1)
-                        fileName = (this.getAttribute('data-multiple-caption') || '').replace('{count}', this.files.length);
-                    else
-                        fileName = e.target.value.split('\\').pop();
-
-                    if (fileName)
-                        label.querySelector('span').innerHTML = fileName;
-                    else
-                        label.innerHTML = labelVal;
-                });
-
-                // Firefox bug fix
-                input.addEventListener('focus', function () { input.classList.add('has-focus'); });
-                input.addEventListener('blur', function () { input.classList.remove('has-focus'); });
+        function myFunction2() {
+            var txt;
+            var person = prompt("Enter the title of the article:");
+            if (person == null || person == "") {
+                txt = "";
+            } else {
+                txt = person;
+            }
+            document.getElementById("demo").innerHTML = txt;
+        }</script>
+    <script>
+var main = document.querySelector('main'),
+            tree = new VanillaTree(main, {
+                contextmenu: [{
+                    label: 'Add',
+                    action: function (id) {
+                        var txt;
+                        var person = prompt("Enter the folder name you want to create:");
+                        if (person == null || person == "") {
+                            txt = "";
+                        } else {
+                            txt = person;
+                        }
+                        document.getElementById("demo").innerHTML = txt;
+                    }
+                }, {
+                    label: 'Create',
+                    action: function (id) {
+                        var txt;
+                        var person = prompt("Enter the title of the article:");
+                        if (person == null || person == "") {
+                            txt = "";
+                        } else {
+                            txt = person;
+                        }
+                        document.getElementById("demo").innerHTML = txt;
+                    }
+                    },
+                    {
+                        label: 'Edit',
+                        action: function (id) {
+                            var txt;
+                            var person = prompt("Do you really want to delete?");
+                            if (person == null || person == "") {
+                                txt = "";
+                            } else {
+                                txt = person;
+                            }
+                            document.getElementById("demo").innerHTML = txt;
+                        }
+                    },
+                    {
+                        label: 'Delete',
+                        action: function (id) {
+                            confirm("Do you really want to delete?");
+                        }
+                    }]
             });
-        }(document, window, 0));
+        tree.add({
+            label: 'Label A',
+            id: 'a',
+            opened: true
+        });
 
-    </script>
+        tree.add({
+            label: 'Label B',
+            id: 'b'
+        });
+
+
+
+        // add new nodes
+        tree.add(options);
+
+        // move a node to parent
+        tree.move(id, parentId);
+
+        // remove a node
+        tree.remove(id);
+
+        // open a node
+        tree.open(id);
+
+        // close a node
+        tree.close(id);
+
+        // toggle a node
+        tree.toggle(id);
+
+        // select a node
+        tree.select(id);</script>
 </body>
 </html>
